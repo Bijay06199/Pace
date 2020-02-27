@@ -5,6 +5,7 @@ import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.CheckBox
 import android.widget.TextView
 import com.example.pace.R
 import com.google.android.material.textfield.TextInputLayout
@@ -19,6 +20,41 @@ class Register_Activity : AppCompatActivity() {
 
 
         val txtLogin= findViewById<TextView>(R.id.txtLogin)
+
+
+        val checkMale= findViewById<CheckBox>(R.id.checkMale)
+        val checkFemale=findViewById<CheckBox>(R.id.checkFemale)
+        val checkOther= findViewById<CheckBox>(R.id.checkOther)
+
+
+checkMale.setOnClickListener(View.OnClickListener {
+
+    if(checkMale.isChecked){
+
+        checkFemale.isChecked=false
+        checkOther.isChecked=false
+    }
+})
+
+
+        checkFemale.setOnClickListener(View.OnClickListener {
+
+            if(checkFemale.isChecked){
+
+                checkMale.isChecked=false
+                checkOther.isChecked=false
+            }
+        })
+
+        checkOther.setOnClickListener(View.OnClickListener {
+
+            if(checkOther.isChecked){
+
+                checkFemale.isChecked=false
+                checkMale.isChecked=false
+            }
+        })
+
 
 
 
@@ -79,5 +115,12 @@ class Register_Activity : AppCompatActivity() {
         })
 
 
+
+
+
+
+
     }
+
+
 }

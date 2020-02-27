@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageButton
+import android.widget.ImageView
 import com.example.pace.R
 import kotlinx.android.synthetic.main.forgot_password.*
 
@@ -23,7 +24,7 @@ class ForgetPassword_Activity : AppCompatActivity() {
         txtYour.setTypeface(typeface)
 
         val btnNext= findViewById<Button>(R.id.btnNext)
-        val backbutton= findViewById<ImageButton>(R.id.backbutton)
+        val backarrow= findViewById<ImageView>(R.id.backarrow)
 
         btnNext.setOnClickListener(View.OnClickListener {
 
@@ -33,7 +34,7 @@ class ForgetPassword_Activity : AppCompatActivity() {
         })
 
 
-        backbutton.setOnClickListener(View.OnClickListener {
+        backarrow.setOnClickListener(View.OnClickListener {
 
             val intent= Intent(this@ForgetPassword_Activity, LoginActivity::class.java)
             startActivity(intent)

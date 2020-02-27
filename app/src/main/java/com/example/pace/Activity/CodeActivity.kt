@@ -9,6 +9,7 @@ import android.text.TextWatcher
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import android.widget.TextView
 import com.example.pace.R
 
@@ -35,24 +36,62 @@ class CodeActivity : AppCompatActivity() {
         val edtCode4=findViewById<EditText>(R.id.edtCode4)
 
 
+
+
+        edtCode2.setTextIsSelectable(true)
+        edtCode3.setTextIsSelectable(true)
+        edtCode4.setTextIsSelectable(true)
+
+
+        val backarrow=findViewById<ImageView>(R.id.backarrow)
+
+        backarrow.setOnClickListener(View.OnClickListener {
+
+            val intent= Intent(this@CodeActivity,ForgetPassword_Activity::class.java)
+            startActivity(intent)
+        })
+
+
         txtFourDigit.typeface=typeface
         txtSent.typeface=typeface
 
         edtCode1.addTextChangedListener(object: TextWatcher {
             override fun onTextChanged(s:CharSequence, start:Int, before:Int, count:Int) {
                 // TODO Auto-generated method stub
-                if (edtCode1.length() === 1)
+                if (edtCode1.length() === 0)
                 //size as per your requirement
                 {
+                   // edtCode2.requestFocus()
+                }
+                else{
                     edtCode2.requestFocus()
                 }
+
             }
             override fun beforeTextChanged(s:CharSequence, start:Int,
                                            count:Int, after:Int) {
                 // TODO Auto-generated method stub
+
+              /*  if (edtCode1.length() === 0)
+                //size as per your requirement
+                {
+                    //edtCode2.requestFocus()
+                }
+                else{
+                    edtCode2.requestFocus()
+                }*/
             }
             override fun afterTextChanged(s:Editable) {
                 // TODO Auto-generated method stub
+
+                /*if (edtCode1.length() === 0)
+                //size as per your requirement
+                {
+                    //edtCode2.requestFocus()
+                }
+                else{
+                    edtCode2.requestFocus()
+                }*/
             }
         })
 
@@ -61,18 +100,37 @@ class CodeActivity : AppCompatActivity() {
         edtCode2.addTextChangedListener(object: TextWatcher {
             override fun onTextChanged(s:CharSequence, start:Int, before:Int, count:Int) {
                 // TODO Auto-generated method stub
-                if (edtCode1.length() === 1)
+                if (edtCode2.length() === 0)
                 //size as per your requirement
                 {
+                    //edtCode3.requestFocus()
+                }
+                else{
                     edtCode3.requestFocus()
                 }
             }
             override fun beforeTextChanged(s:CharSequence, start:Int,
                                            count:Int, after:Int) {
                 // TODO Auto-generated method stub
+                /*if (edtCode2.length() === 0)
+                //size as per your requirement
+                {
+                    //edtCode3.requestFocus()
+                }
+                else{
+                    edtCode3.requestFocus()
+                }*/
             }
             override fun afterTextChanged(s:Editable) {
                 // TODO Auto-generated method stub
+             /*   if (edtCode2.length() === 0)
+                //size as per your requirement
+                {
+                    //edtCode3.requestFocus()
+                }
+                else{
+                    edtCode3.requestFocus()
+                }*/
             }
         })
 
@@ -80,18 +138,37 @@ class CodeActivity : AppCompatActivity() {
         edtCode3.addTextChangedListener(object: TextWatcher {
             override fun onTextChanged(s:CharSequence, start:Int, before:Int, count:Int) {
                 // TODO Auto-generated method stub
-                if (edtCode1.length() === 1)
+                if (edtCode3.length() === 0)
                 //size as per your requirement
                 {
+                    //edtCode4.requestFocus()
+                }
+                else {
                     edtCode4.requestFocus()
                 }
             }
             override fun beforeTextChanged(s:CharSequence, start:Int,
                                            count:Int, after:Int) {
                 // TODO Auto-generated method stub
+                /*if (edtCode3.length() === 0)
+                //size as per your requirement
+                {
+                   // edtCode4.requestFocus()
+                }
+                else{
+                    edtCode4.requestFocus()
+                }*/
             }
             override fun afterTextChanged(s:Editable) {
                 // TODO Auto-generated method stub
+              /*  if (edtCode3.length() === 0)
+                //size as per your requirement
+                {
+                    //edtCode4.requestFocus()
+                }
+                else{
+                    edtCode4.requestFocus()
+                }*/
             }
         })
 

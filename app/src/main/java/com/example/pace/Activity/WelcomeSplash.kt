@@ -18,7 +18,7 @@ import kotlinx.android.synthetic.main.activity_welcome_splash.view.*
 
 class WelcomeSplash : AppCompatActivity() {
 
-
+    var counter: Int=0
 
     val SELECTED_TAB_EXTRA_KEY:String = "selectedTabIndex"
     val HOME_TAB = 0
@@ -49,7 +49,7 @@ class WelcomeSplash : AppCompatActivity() {
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(R.layout.activity_welcome_splash)
 
-        var counter: Int=0
+
 
         pagerAdapterView = ViewPagerAdapter(supportFragmentManager)
         addPagerFragments()
@@ -81,13 +81,14 @@ class WelcomeSplash : AppCompatActivity() {
 
 
 
+
                 counter++
 
           if(counter==1){
 
-
-              val selected:Int=intent.getIntExtra(SELECTED_TAB_EXTRA_KEY,1)
+              val selected:Int=intent.getIntExtra(SELECTED_TAB_EXTRA_KEY,1 )
               myViewPager.setCurrentItem(selected)
+
 
 
 
@@ -130,7 +131,7 @@ class WelcomeSplash : AppCompatActivity() {
             if(counter==1){
 
 
-                val selected:Int=intent.getIntExtra(SELECTED_TAB_EXTRA_KEY,1)
+                val selected:Int=intent.getIntExtra(SELECTED_TAB_EXTRA_KEY,counter)
                 myViewPager.setCurrentItem(selected)
 
 
@@ -140,7 +141,7 @@ class WelcomeSplash : AppCompatActivity() {
 
             else if(counter==2){
 
-                val selected:Int=intent.getIntExtra(SELECTED_TAB_EXTRA_KEY,2)
+                val selected:Int=intent.getIntExtra(SELECTED_TAB_EXTRA_KEY,counter)
                 myViewPager.setCurrentItem(selected)
 
 
@@ -193,20 +194,21 @@ class WelcomeSplash : AppCompatActivity() {
                 firstDotImageView.setImageResource(R.drawable.selecteditem_dot)
                 secondDotImageView.setImageResource(R.drawable.nonselecteditem_dot)
                 thirdDotImageView.setImageResource(R.drawable.nonselecteditem_dot)
+                counter=0
             }
             1 -> {
                 firstDotImageView.setImageResource(R.drawable.nonselecteditem_dot)
                 secondDotImageView.setImageResource(R.drawable.selecteditem_dot)
                 thirdDotImageView.setImageResource(R.drawable.nonselecteditem_dot)
+                counter=1
             }
             2 -> {
-               // val position=2
+
                 firstDotImageView.setImageResource(R.drawable.nonselecteditem_dot)
                 secondDotImageView.setImageResource(R.drawable.nonselecteditem_dot)
                 thirdDotImageView.setImageResource(R.drawable.selecteditem_dot)
-               // val intent= Intent(this@WelcomeSplash, LoginActivity::class.java)
-                //intent.flags= Intent.FLAG_ACTIVITY_CLEAR_TASK
-               // startActivity(intent)
+                counter=2
+
 
             }
         }

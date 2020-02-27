@@ -5,10 +5,7 @@ import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ImageButton
-import android.widget.TextView
+import android.widget.*
 import com.example.pace.R
 
 class ResetPasswordActivity : AppCompatActivity() {
@@ -19,7 +16,7 @@ class ResetPasswordActivity : AppCompatActivity() {
 
         val btnReset= findViewById<Button>(R.id.btnReset)
 
-        val backbutton= findViewById<ImageButton>(R.id.backbutton)
+        val backbutton= findViewById<ImageView>(R.id.backbutton)
 
 
         val typeface= Typeface.createFromAsset(assets,"Quicksand_Regular.ttf")
@@ -53,7 +50,7 @@ class ResetPasswordActivity : AppCompatActivity() {
         backbutton.setOnClickListener(View.OnClickListener {
 
             val intent= Intent(this@ResetPasswordActivity,
-                ForgetPassword_Activity::class.java)
+               CodeActivity ::class.java)
             startActivity(intent)
         })
 

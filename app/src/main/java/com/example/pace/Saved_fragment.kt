@@ -32,6 +32,7 @@ class Saved_fragment : Fragment() {
         val forRentLayoutUnderline= v.findViewById<LinearLayout>(R.id.forRentLayoutUnderline)
         val forSaleLayoutUnderline=v.findViewById<LinearLayout>(R.id.forSaleLayoutUnderline)
         val forSavedSearchLayoutUnderline=v.findViewById<LinearLayout>(R.id.forSavedSearchLayoutUnderline)
+        val underline= v.findViewById<LinearLayout>(R.id.Underline)
 
 
         if (savedInstanceState == null) {
@@ -47,9 +48,10 @@ class Saved_fragment : Fragment() {
             savedSearches.setTextColor(resources.getColor(R.color.saved))
 
             allLayoutUnderline.setBackgroundColor((resources.getColor(R.color.colorAccent)))
-            forSaleLayoutUnderline.setBackgroundColor((resources.getColor(R.color.material_white)))
-            forRentLayoutUnderline.setBackgroundColor((resources.getColor(R.color.material_white)))
-            forSavedSearchLayoutUnderline.setBackgroundColor((resources.getColor(R.color.material_white)))
+            forSaleLayoutUnderline.setBackgroundColor((resources.getColor(R.color.underline)))
+            forRentLayoutUnderline.setBackgroundColor((resources.getColor(R.color.underline)))
+            forSavedSearchLayoutUnderline.setBackgroundColor((resources.getColor(R.color.underline)))
+
 
 
 
@@ -69,10 +71,11 @@ class Saved_fragment : Fragment() {
             savedSearches.setTextColor(resources.getColor(R.color.saved))
 
 
+
             allLayoutUnderline.setBackgroundColor((resources.getColor(R.color.colorAccent)))
-            forSaleLayoutUnderline.setBackgroundColor((resources.getColor(R.color.material_white)))
-            forRentLayoutUnderline.setBackgroundColor((resources.getColor(R.color.material_white)))
-            forSavedSearchLayoutUnderline.setBackgroundColor((resources.getColor(R.color.material_white)))
+            forSaleLayoutUnderline.setBackgroundColor((resources.getColor(R.color.underline)))
+            forRentLayoutUnderline.setBackgroundColor((resources.getColor(R.color.underline)))
+            forSavedSearchLayoutUnderline.setBackgroundColor((resources.getColor(R.color.underline)))
 
 
 
@@ -92,10 +95,11 @@ class Saved_fragment : Fragment() {
             forSale.setTextColor(resources.getColor(R.color.saved))
             savedSearches.setTextColor(resources.getColor(R.color.saved))
 
-            allLayoutUnderline.setBackgroundColor((resources.getColor(R.color.material_white)))
-            forSaleLayoutUnderline.setBackgroundColor((resources.getColor(R.color.material_white)))
+            allLayoutUnderline.setBackgroundColor((resources.getColor(R.color.underline)))
+            forSaleLayoutUnderline.setBackgroundColor((resources.getColor(R.color.underline)))
             forRentLayoutUnderline.setBackgroundColor((resources.getColor(R.color.colorAccent)))
-            forSavedSearchLayoutUnderline.setBackgroundColor((resources.getColor(R.color.material_white)))
+            forSavedSearchLayoutUnderline.setBackgroundColor((resources.getColor(R.color.underline)))
+
 
         }
 
@@ -112,10 +116,11 @@ class Saved_fragment : Fragment() {
             forSale.setTextColor(resources.getColor(R.color.colorAccent))
             savedSearches.setTextColor(resources.getColor(R.color.saved))
 
-            allLayoutUnderline.setBackgroundColor((resources.getColor(R.color.material_white)))
+            allLayoutUnderline.setBackgroundColor((resources.getColor(R.color.underline)))
             forSaleLayoutUnderline.setBackgroundColor((resources.getColor(R.color.colorAccent)))
-            forRentLayoutUnderline.setBackgroundColor((resources.getColor(R.color.material_white)))
-            forSavedSearchLayoutUnderline.setBackgroundColor((resources.getColor(R.color.material_white)))
+            forRentLayoutUnderline.setBackgroundColor((resources.getColor(R.color.underline)))
+            forSavedSearchLayoutUnderline.setBackgroundColor((resources.getColor(R.color.underline)))
+
 
         }
 
@@ -133,10 +138,11 @@ class Saved_fragment : Fragment() {
             forSale.setTextColor(resources.getColor(R.color.saved))
             savedSearches.setTextColor(resources.getColor(R.color.colorAccent))
 
-            allLayoutUnderline.setBackgroundColor((resources.getColor(R.color.material_white)))
-            forSaleLayoutUnderline.setBackgroundColor((resources.getColor(R.color.material_white)))
-            forRentLayoutUnderline.setBackgroundColor((resources.getColor(R.color.material_white)))
+            allLayoutUnderline.setBackgroundColor((resources.getColor(R.color.underline)))
+            forSaleLayoutUnderline.setBackgroundColor((resources.getColor(R.color.underline)))
+            forRentLayoutUnderline.setBackgroundColor((resources.getColor(R.color.underline)))
             forSavedSearchLayoutUnderline.setBackgroundColor((resources.getColor(R.color.colorAccent)))
+
 
         }
 
