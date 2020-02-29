@@ -23,6 +23,9 @@ class AllFragment : Fragment() {
 
         val allSaved = v.findViewById<View>(R.id.allSaved) as TextView
 
+
+
+
         allSaved.setOnClickListener(View.OnClickListener {
 
             val fragment = AllSaved_Fragment()
@@ -37,6 +40,8 @@ class AllFragment : Fragment() {
 
         return v
     }
+
+    
 
 
 }

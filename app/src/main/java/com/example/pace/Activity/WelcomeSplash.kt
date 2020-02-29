@@ -8,6 +8,7 @@ import android.view.View
 import android.view.Window
 import android.view.WindowManager
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.viewpager.widget.ViewPager
 import com.example.pace.*
@@ -49,6 +50,17 @@ class WelcomeSplash : AppCompatActivity() {
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(R.layout.activity_welcome_splash)
 
+
+
+        val imgSkip= findViewById<ImageView>(R.id.imgSkip)
+
+
+        imgSkip.setOnClickListener(View.OnClickListener {
+
+            val intent= Intent(this@WelcomeSplash, MainActivity::class.java)
+            intent.flags= Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(intent)
+        })
 
 
         pagerAdapterView = ViewPagerAdapter(supportFragmentManager)
@@ -105,14 +117,14 @@ class WelcomeSplash : AppCompatActivity() {
           }
 
                 else if(counter==3){
-                val intent= Intent(this@WelcomeSplash, MainActivity::class.java)
-                intent.flags= Intent.FLAG_ACTIVITY_CLEAR_TASK
-                startActivity(intent)
+
 
           }
 
                 else{
-
+              val intent= Intent(this@WelcomeSplash, MainActivity::class.java)
+              intent.flags= Intent.FLAG_ACTIVITY_CLEAR_TASK
+              startActivity(intent)
               counter=1
 
           }

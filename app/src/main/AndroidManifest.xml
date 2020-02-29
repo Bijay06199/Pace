@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.ShareActivity"></activity>
+        <activity android:name=".Activity.SettingsActivity"></activity>
+        <activity android:name=".Activity.ShareActivity" />
         <activity android:name=".RentHome_Activity" />
         <activity android:name=".Activity.SaleHome_Activity" />
         <activity android:name=".Activity.Chat1_Activity" />
@@ -29,7 +30,7 @@
         <activity android:name=".Activity.Register_Activity" />
         <activity android:name=".Activity.NavigationActivity" />
         <activity android:name=".Activity.LoginActivity" />
-        <activity android:name=".Activity.MainActivity"></activity>
+        <activity android:name=".Activity.MainActivity" />
     </application>
 
 </manifest>

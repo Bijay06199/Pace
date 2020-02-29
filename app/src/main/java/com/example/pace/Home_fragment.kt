@@ -79,20 +79,20 @@ class Home_fragment : Fragment() {
     private fun onPageSelected(position: Int) {
         when (position) {
             0 -> {
-                firstDotImageView1.setImageResource(R.drawable.selecteditem_dot)
-                secondDotImageView1.setImageResource(R.drawable.nonselecteditem_dot)
-                thirdDotImageView1.setImageResource(R.drawable.nonselecteditem_dot)
+                firstDotImageView1.setImageResource(R.drawable.selecteditemhome_dot)
+                secondDotImageView1.setImageResource(R.drawable.nonselecteditemhome_dot)
+                thirdDotImageView1.setImageResource(R.drawable.nonselecteditemhome_dot)
             }
             1 -> {
-                firstDotImageView1.setImageResource(R.drawable.nonselecteditem_dot)
-                secondDotImageView1.setImageResource(R.drawable.selecteditem_dot)
-                thirdDotImageView1.setImageResource(R.drawable.nonselecteditem_dot)
+                firstDotImageView1.setImageResource(R.drawable.nonselecteditemhome_dot)
+                secondDotImageView1.setImageResource(R.drawable.selecteditemhome_dot)
+                thirdDotImageView1.setImageResource(R.drawable.nonselecteditemhome_dot)
             }
             2 -> {
                 // val position=2
-                firstDotImageView1.setImageResource(R.drawable.nonselecteditem_dot)
-                secondDotImageView1.setImageResource(R.drawable.nonselecteditem_dot)
-                thirdDotImageView1.setImageResource(R.drawable.selecteditem_dot)
+                firstDotImageView1.setImageResource(R.drawable.nonselecteditemhome_dot)
+                secondDotImageView1.setImageResource(R.drawable.nonselecteditemhome_dot)
+                thirdDotImageView1.setImageResource(R.drawable.selecteditemhome_dot)
                 // val intent= Intent(this@WelcomeSplash, LoginActivity::class.java)
                 //intent.flags= Intent.FLAG_ACTIVITY_CLEAR_TASK
                 // startActivity(intent)

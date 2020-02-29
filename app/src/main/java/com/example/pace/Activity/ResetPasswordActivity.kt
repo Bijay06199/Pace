@@ -16,7 +16,7 @@ class ResetPasswordActivity : AppCompatActivity() {
 
         val btnReset= findViewById<Button>(R.id.btnReset)
 
-        val backbutton= findViewById<ImageView>(R.id.backbutton)
+        val backbutton= findViewById<LinearLayout>(R.id.backbutton)
 
 
         val typeface= Typeface.createFromAsset(assets,"Quicksand_Regular.ttf")

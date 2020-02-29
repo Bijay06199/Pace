@@ -26,6 +26,10 @@ class Register_Activity : AppCompatActivity() {
         val checkFemale=findViewById<CheckBox>(R.id.checkFemale)
         val checkOther= findViewById<CheckBox>(R.id.checkOther)
 
+        val txtMale= findViewById<TextView>(R.id.txtMale)
+        val txtFemale= findViewById<TextView>(R.id.txtFemale)
+        val txtOther= findViewById<TextView>(R.id.txtOther)
+
 
 checkMale.setOnClickListener(View.OnClickListener {
 
@@ -37,6 +41,19 @@ checkMale.setOnClickListener(View.OnClickListener {
 })
 
 
+        txtMale.setOnClickListener(View.OnClickListener {
+
+                checkMale.isChecked=true
+
+                checkFemale.isChecked=false
+                checkOther.isChecked=false
+
+        })
+
+
+
+
+
         checkFemale.setOnClickListener(View.OnClickListener {
 
             if(checkFemale.isChecked){
@@ -46,6 +63,16 @@ checkMale.setOnClickListener(View.OnClickListener {
             }
         })
 
+
+        txtFemale.setOnClickListener(View.OnClickListener {
+
+
+                checkFemale.isChecked=true
+                checkMale.isChecked=false
+                checkOther.isChecked=false
+
+        })
+
         checkOther.setOnClickListener(View.OnClickListener {
 
             if(checkOther.isChecked){
@@ -53,6 +80,16 @@ checkMale.setOnClickListener(View.OnClickListener {
                 checkFemale.isChecked=false
                 checkMale.isChecked=false
             }
+        })
+
+
+        txtOther.setOnClickListener(View.OnClickListener {
+
+
+                checkOther.isChecked=true
+                checkFemale.isChecked=false
+                checkMale.isChecked=false
+
         })
 
 

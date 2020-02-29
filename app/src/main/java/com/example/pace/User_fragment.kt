@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.pace.Activity.SettingsActivity
 import com.example.pace.Activity.ShareActivity
 
 /**
@@ -26,7 +27,13 @@ class User_fragment : Fragment() {
 
         val txtShare=v.findViewById<TextView>(R.id.txtShare)
         val imgShare= v.findViewById<ImageView>(R.id.imgShare)
+        val iconsettinguser= v.findViewById<ImageView>(R.id.iconSettinguser)
 
+        iconsettinguser.setOnClickListener(View.OnClickListener {
+
+            val intent= Intent(this@User_fragment.activity, SettingsActivity::class.java)
+            startActivity(intent)
+        })
 
         txtShare.setOnClickListener(View.OnClickListener {
             val intent= Intent(this@User_fragment.activity,ShareActivity::class.java)

@@ -20,6 +20,22 @@ class NavigationActivity : AppCompatActivity() {
 
 
 
+
+
+        val extras:Bundle?=intent.extras
+
+        if(extras!=null && extras.containsKey("flag")) {
+
+            val flag = extras.getBoolean("flag")
+
+
+            if (flag)
+            {
+            }
+        }
+
+
+
         if (savedInstanceState == null) {
             val fragment = Home_fragment()
             val transaction = supportFragmentManager.beginTransaction()

@@ -7,10 +7,7 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ImageView
-import android.widget.TextView
+import android.widget.*
 import com.example.pace.R
 
 class CodeActivity : AppCompatActivity() {
@@ -43,7 +40,7 @@ class CodeActivity : AppCompatActivity() {
         edtCode4.setTextIsSelectable(true)
 
 
-        val backarrow=findViewById<ImageView>(R.id.backarrow)
+        val backarrow=findViewById<LinearLayout>(R.id.backarrow)
 
         backarrow.setOnClickListener(View.OnClickListener {
 

@@ -14,137 +14,249 @@
 
 
 
-
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            >
-
-
-
-
-
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="vertical" >
 
 
-                <FrameLayout
-                    android:id="@+id/saleContainer"
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="270dp">
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical">
 
 
-                </FrameLayout>
 
-                <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" >
-
-                    <HorizontalScrollView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal" >
-
-
-                        <LinearLayout
+                    <FrameLayout
+                        android:id="@+id/saleContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp">
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/myViewPager1"
                             android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                             />
+
+                    </FrameLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imgBack"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="20dp"
-                            android:orientation="horizontal">
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/back11" />
 
-                            <TextView
-                                android:id="@+id/txtExterior"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Exterior" />
+                        <Space
+                            android:layout_width="300dp"
+                            android:layout_height="wrap_content" />
 
-                            <TextView
-                                android:id="@+id/txtLayout"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:text="Layout" />
+                        <ImageView
+                            android:id="@+id/imageView35"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/heart" />
 
-                            <TextView
-                                android:id="@+id/txtBedroom"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:text="Bedroom" />
-
-                            <TextView
-                                android:id="@+id/txtBathroom"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:text="Bathroom" />
-
-                            <TextView
-                                android:id="@+id/txtLivingRoom"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:text="Living room" />
+                        <ImageView
+                            android:id="@+id/imageView36"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/iconshare" />
+                    </LinearLayout>
 
 
-                            <TextView
-                                android:id="@+id/txtLivingRoom11"
-                                android:layout_width="wrap_content"
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="270dp"
+                        android:layout_height="35dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginLeft="20dp"
-                                android:text="Living room11" />
+                                android:gravity="top"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txtExterior"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Exterior"
+                                        android:textColor="#FFF" />
+
+                                    <ImageView
+                                        android:id="@+id/imgExterior"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        app:srcCompat="@drawable/polygon" />
+                                </LinearLayout>
 
 
-                            <TextView
-                                android:id="@+id/txtLivingRoom22"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:text="Living room22" />
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txtLayout"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:text="Layout"
+                                        android:textColor="#FFF" />
+
+                                    <ImageView
+                                        android:id="@+id/imgLayout"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        app:srcCompat="@drawable/polygon" />
+                                </LinearLayout>
 
 
-                            <TextView
-                                android:id="@+id/txtLivingRoom33"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:text="Living room33" />
 
 
-                            <TextView
-                                android:id="@+id/txtLivingRoom44"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:text="Living room44" />
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txtBedroom"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:text="Bedroom"
+                                        android:textColor="#FFF" />
+
+                                    <ImageView
+                                        android:id="@+id/imgBedroom"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        app:srcCompat="@drawable/polygon" />
+                                </LinearLayout>
 
 
-                            <TextView
-                                android:id="@+id/txtLivingRoom55"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginLeft="20dp"
-                                android:text="Living room55" />
 
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txtBathroom"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:text="Bathroom"
+                                        android:textColor="#FFF" />
+
+                                    <ImageView
+                                        android:id="@+id/imgBathroom"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        app:srcCompat="@drawable/polygon" />
+                                </LinearLayout>
+
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txtLivingRoom"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:text="Living room"
+                                        android:textColor="#FFF" />
+
+                                    <ImageView
+                                        android:id="@+id/imgLivingRoom"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        app:srcCompat="@drawable/polygon" />
+                                </LinearLayout>
+
+
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txtLivingRoom11"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="20dp"
+                                        android:text="Living room11"
+                                        android:textColor="#FFF" />
+
+                                    <ImageView
+                                        android:id="@+id/imgLivingRoom11"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_gravity="center"
+                                        app:srcCompat="@drawable/polygon" />
+                                </LinearLayout>
+
+
+
+
+
+
+
+
+                            </LinearLayout>
 
                         </LinearLayout>
 
-                    </LinearLayout>
+                    </HorizontalScrollView>
 
-                </HorizontalScrollView>
-            </LinearLayout>
+
+                </RelativeLayout>
 
                 <TextView
                     android:id="@+id/textView31"
                     android:layout_width="match_parent"
-                    android:layout_marginTop="15dp"
+                    android:layout_marginTop="10dp"
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:textStyle="bold"
@@ -335,9 +447,9 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
                     android:layout_marginLeft="20dp"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
+
 
 
 
@@ -349,64 +461,72 @@
                         android:background="#72000000"
                         android:orientation="horizontal"/>
 
-
-
                     <LinearLayout
-                        android:layout_width="60dp"
-                        android:layout_height="30dp"
-                        android:background="@drawable/smallayout_home"
-                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
                         android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/textView36"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="#000"
-                            android:textSize="12sp"
-                            android:text="4LDK" />
+                        <LinearLayout
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/smallayout_home"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView36"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000"
+                                android:textSize="12sp"
+                                android:text="4LDK" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="50dp"
+                            android:background="@drawable/smallayout_home"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView37"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000"
+                                android:textSize="12sp"
+                                android:text="Detached house" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:background="@drawable/smallayout_home"
+                            android:layout_marginLeft="30dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView38"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000"
+                                android:textSize="12sp"
+                                android:text="Near Subway" />
+                        </LinearLayout>
+
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="130dp"
-                        android:layout_height="30dp"
-                        android:layout_marginLeft="50dp"
-                        android:background="@drawable/smallayout_home"
-                        android:gravity="center"
-                        android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/textView37"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="#000"
-                            android:textSize="12sp"
-                            android:text="Detached house" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="100dp"
-                        android:layout_height="30dp"
-                        android:gravity="center"
-                        android:background="@drawable/smallayout_home"
-                        android:layout_marginLeft="30dp"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textView38"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="#000"
-                            android:textSize="12sp"
-                            android:text="Near Subway" />
-                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:layout_marginLeft="20dp"
+
                     android:orientation="vertical">
 
                     <TextView
@@ -415,6 +535,7 @@
                         android:layout_height="wrap_content"
                         android:text="Kais Ville Homes is actually every mountain"
                         android:textColor="#201A16"
+                        android:layout_marginLeft="20dp"
                         android:textSize="14sp" />
 
                     <TextView
@@ -423,6 +544,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="#201A16"
                         android:textSize="14sp"
+                        android:layout_marginLeft="20dp"
                         android:text="home lover's dream come true. This residential" />
 
                     <TextView
@@ -431,6 +553,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="#201A16"
                         android:textSize="14sp"
+                        android:layout_marginLeft="20dp"
                         android:text="project in Kulu Manali(Himachal Pradesh)..." />
 
                     <TextView
@@ -439,86 +562,19 @@
                         android:layout_height="wrap_content"
                         android:textColor="#02BEB2"
                         android:textSize="14sp"
+                        android:layout_marginLeft="20dp"
                         android:text="more" />
+
+                    <LinearLayout
+                        android:id="@+id/imageView44"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/map2" />
                 </LinearLayout>
 
 
-                <androidx.coordinatorlayout.widget.CoordinatorLayout
-                    xmlns:android="http://schemas.android.com/apk/res/android"
-                    xmlns:app="http://schemas.android.com/apk/res-auto"
-                    android:id="@+id/coordinator"
-                    android:layout_width="match_parent"
-                    android:layout_height="140dp"
-                    android:background="@drawable/map11"
-                    android:layout_gravity="bottom">
 
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:id="@+id/fab"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:clickable="true"
-                        android:focusable="true"
-                        app:backgroundTint="#194CB4"
-                        android:src="@drawable/phone"
-                        app:layout_anchor="@id/bar" />
-
-
-
-
-                    <com.google.android.material.bottomappbar.BottomAppBar
-                        android:id="@+id/bar"
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_gravity="bottom"
-                        android:backgroundTint="#02BEB2"
-                        android:background="#02BEB2"
-
-                        >
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                style="?android:attr/borderlessButtonStyle"
-                                android:layout_width="0dp"
-                                android:id="@+id/requestVisit"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:background="?android:attr/selectableItemBackground"
-                                android:gravity="center"
-                                android:textSize="14sp"
-                                android:layout_gravity="center"
-                                android:orientation="vertical"
-                                android:text=""
-                                android:textAllCaps="false"
-                                android:textColor="#FFF">
-
-                            </TextView>
-
-                            <TextView
-                                style="?android:attr/borderlessButtonStyle"
-                                android:layout_width="0dp"
-                                android:id="@+id/email"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:textSize="11sp"
-                                android:background="?android:attr/selectableItemBackground"
-                                android:gravity="center"
-                                android:orientation="vertical"
-                                android:text=""
-                                android:textColor="#FFF">
-
-                            </TextView>
-
-
-
-                        </LinearLayout>
-
-                    </com.google.android.material.bottomappbar.BottomAppBar>
-
-                </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -772,15 +828,96 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:layout_marginBottom="50dp"
-                        android:text="20 Chome,Shibu City, Tokyo" />
+                        android:text="20 Chome,Shibu City, Tokyo"
+                        android:paddingBottom="30dp"/>
                 </LinearLayout>
+
+
 
             </LinearLayout>
         </ScrollView>
 
 
+
+
     </LinearLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            app:backgroundTint="#194CB4"
+            android:src="@drawable/phone"
+            app:layout_anchor="@id/bar" />
 
 
+
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:backgroundTint="#02BEB2"
+            app:fabCradleMargin="0dp"
+            app:fabCradleRoundedCornerRadius="0dp"
+            android:background="#02BEB2"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:id="@+id/requestVisit"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="#FFF">
+
+                </TextView>
+
+                <TextView
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:id="@+id/email"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="11sp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:text=""
+                    android:textColor="#FFF">
+
+                </TextView>
+
+
+
+            </LinearLayout>
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </RelativeLayout>

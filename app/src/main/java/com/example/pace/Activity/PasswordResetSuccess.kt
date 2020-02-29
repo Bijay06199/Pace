@@ -5,10 +5,7 @@ import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.ImageButton
-import android.widget.ImageView
-import android.widget.TextView
+import android.widget.*
 import com.example.pace.R
 
 class PasswordResetSuccess : AppCompatActivity() {
@@ -19,7 +16,7 @@ class PasswordResetSuccess : AppCompatActivity() {
 
         val btnLoginSuccess= findViewById<Button>(R.id.btnLoginSuccess)
 
-        val backbutton= findViewById<ImageView>(R.id.backbutton)
+        val backbutton= findViewById<LinearLayout>(R.id.backbutton)
 
         val typeface= Typeface.createFromAsset(assets,"Quicksand_Regular.ttf")
 

@@ -121,7 +121,7 @@
 
                     <LinearLayout
                         android:id="@+id/allLayoutUnderline"
-                        android:layout_width="25dp"
+                        android:layout_width="35dp"
                         android:layout_height="2dp"
                         android:orientation="horizontal"></LinearLayout>
 
@@ -129,9 +129,9 @@
 
                     <LinearLayout
                         android:id="@+id/forRentLayoutUnderline"
-                        android:layout_width="65dp"
+                        android:layout_width="70dp"
                         android:layout_height="2dp"
-                        android:layout_marginLeft="45dp"
+                        android:layout_marginLeft="35dp"
                         android:orientation="horizontal"></LinearLayout>
 
 
@@ -139,13 +139,13 @@
                         android:id="@+id/forSaleLayoutUnderline"
                         android:layout_width="65dp"
                         android:layout_height="2dp"
-                        android:layout_marginLeft="25dp"
+                        android:layout_marginLeft="20dp"
                         android:orientation="horizontal"></LinearLayout>
 
 
                     <LinearLayout
                         android:id="@+id/forSavedSearchLayoutUnderline"
-                        android:layout_width="90dp"
+                        android:layout_width="100dp"
                         android:layout_height="2dp"
                         android:layout_marginLeft="18dp"
                         android:orientation="horizontal"></LinearLayout>

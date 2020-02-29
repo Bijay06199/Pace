@@ -5,10 +5,7 @@ import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.Button
-import android.widget.EditText
-import android.widget.ImageButton
-import android.widget.ImageView
+import android.widget.*
 import com.example.pace.R
 import kotlinx.android.synthetic.main.forgot_password.*
 
@@ -24,7 +21,7 @@ class ForgetPassword_Activity : AppCompatActivity() {
         txtYour.setTypeface(typeface)
 
         val btnNext= findViewById<Button>(R.id.btnNext)
-        val backarrow= findViewById<ImageView>(R.id.backarrow)
+        val backarrow= findViewById<LinearLayout>(R.id.backarrow)
 
         btnNext.setOnClickListener(View.OnClickListener {
 
