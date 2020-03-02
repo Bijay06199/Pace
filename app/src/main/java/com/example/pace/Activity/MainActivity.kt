@@ -4,6 +4,7 @@ import android.content.Intent
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.KeyEvent
 import android.view.TextureView
 import android.view.View
 import android.widget.TextView
@@ -20,8 +21,8 @@ class MainActivity : AppCompatActivity() {
 
         val typeface= Typeface.createFromAsset(assets,"Quicksand_Regular.ttf")
 
-        btnLogin.text="Login"
-        btnRegister.text="Register"
+        btnLogin.text=getString(R.string.login)
+        btnRegister.text=getString(R.string.register)
 
         btnLogin.typeface= typeface
         btnRegister.typeface=typeface
@@ -35,6 +36,7 @@ class MainActivity : AppCompatActivity() {
 
             val intent= Intent(this@MainActivity, LoginActivity::class.java)
             startActivity(intent)
+            finish()
         })
 
 
@@ -42,6 +44,7 @@ class MainActivity : AppCompatActivity() {
 
             val intent= Intent (this@MainActivity, Register_Activity::class.java)
             startActivity(intent)
+            finish()
         })
 
 
@@ -49,8 +52,17 @@ class MainActivity : AppCompatActivity() {
 
             val intent= Intent(this@MainActivity,NavigationActivity::class.java)
             startActivity(intent)
+            finish()
         })
 
 
     }
-}
+
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
+    }
+    }
+
+

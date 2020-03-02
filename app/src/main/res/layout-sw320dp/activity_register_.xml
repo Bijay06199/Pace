@@ -51,7 +51,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="70dp"
                     android:backgroundTint="#FFF"
-                    android:hint="Full Name"
+                    android:hint="@string/fullname"
                     android:inputType="textPersonName"
                     android:textColor="#FFF" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -72,7 +72,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="70dp"
                     android:backgroundTint="#FFF"
-                    android:hint="Email"
+                    android:hint="@string/email"
                     android:inputType="textEmailAddress"
                     android:textColor="#FFF" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -160,7 +160,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="70dp"
                     android:backgroundTint="#FFF"
-                    android:hint="Password"
+                    android:hint="@string/password"
                     android:inputType="textPassword"
                     android:textColor="#FFF" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -181,7 +181,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="70dp"
                     android:backgroundTint="#FFF"
-                    android:hint="Confirm Password"
+                    android:hint="@string/confirm_password"
                     android:inputType="textPassword"
                     android:textColor="#FFF" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -190,7 +190,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="37dp"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="10dp"
                 android:orientation="horizontal">
 
                 <CheckBox
@@ -200,9 +200,8 @@
 
                 <TextView
                     android:id="@+id/txtAgree"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:text=""
                     android:textColor="#FFFF"
                     android:textSize="11sp" />

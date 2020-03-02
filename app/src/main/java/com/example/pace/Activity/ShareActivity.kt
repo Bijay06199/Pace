@@ -21,7 +21,7 @@ class ShareActivity : AppCompatActivity() {
 
         iconback.setOnClickListener(View.OnClickListener {
 
-
+        finish()
 
 
 

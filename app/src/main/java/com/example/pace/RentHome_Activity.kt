@@ -9,9 +9,13 @@ import android.widget.TextView
 import com.example.pace.Activity.Fragments.BedroomFragment
 import com.example.pace.Activity.Fragments.ExteriorFragment
 import com.example.pace.Activity.NavigationActivity
+import com.example.pace.Adapter.ViewPagerAdapter
+import com.example.pace.Adapter.ViewPagerListener
 import kotlinx.android.synthetic.main.activity_sale_home.*
 
 class RentHome_Activity : AppCompatActivity() {
+
+    private lateinit var pagerAdapterView: ViewPagerAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,7 +35,12 @@ class RentHome_Activity : AppCompatActivity() {
 
 
 
-        // pagerAdapterView = ViewPagerAdapter(supportFragmentManager)
+
+        pagerAdapterView = ViewPagerAdapter(supportFragmentManager)
+        addPagerFragments()
+        myViewPager1?.adapter = pagerAdapterView
+        // myViewPager1?.setPageTransformer(true, this::zoomOutTransformation)
+        myViewPager1?.addOnPageChangeListener(ViewPagerListener(this::onPageSelected))
 
 
 
@@ -63,6 +72,7 @@ class RentHome_Activity : AppCompatActivity() {
 
 
         if(savedInstanceState==null){
+
 
             val fragment= ExteriorFragment()
             val transaction= supportFragmentManager.beginTransaction()
@@ -134,4 +144,57 @@ class RentHome_Activity : AppCompatActivity() {
 
 
     }
+
+    private fun onPageSelected(position: Int) {
+        when (position) {
+            0 -> {
+                imgExterior.visibility=View.VISIBLE
+                imgLayout.visibility=View.INVISIBLE
+                imgBedroom.visibility=View.INVISIBLE
+                imgBathroom.visibility=View.INVISIBLE
+                imgLivingRoom.visibility=View.INVISIBLE
+                imgLivingRoom11.visibility=View.INVISIBLE
+                val fragment = ExteriorFragment()
+                val transaction = supportFragmentManager.beginTransaction()
+                transaction.replace(R.id.saleContainer, fragment)
+                transaction.commit()
+            }
+            1 -> {
+                imgLayout.visibility=View.VISIBLE
+                imgExterior.visibility=View.INVISIBLE
+                imgBedroom.visibility=View.INVISIBLE
+                imgBathroom.visibility=View.INVISIBLE
+                imgLivingRoom.visibility=View.INVISIBLE
+                imgLivingRoom11.visibility=View.INVISIBLE
+                val fragment =LayoutFragment()
+                val transaction = supportFragmentManager.beginTransaction()
+                transaction.replace(R.id.saleContainer, fragment)
+                transaction.commit()
+            }
+            2 -> {
+                imgBedroom.visibility=View.VISIBLE
+                imgLayout.visibility=View.INVISIBLE
+                imgExterior.visibility=View.INVISIBLE
+                imgBathroom.visibility=View.INVISIBLE
+                imgLivingRoom.visibility=View.INVISIBLE
+                imgLivingRoom11.visibility=View.INVISIBLE
+                val fragment = BedroomFragment()
+                val transaction = supportFragmentManager.beginTransaction()
+                transaction.replace(R.id.saleContainer, fragment)
+                transaction.commit()
+
+            }
+        }
+    }
+
+
+
+    private fun addPagerFragments() {
+        pagerAdapterView.addFragments(ExteriorFragment())
+        pagerAdapterView.addFragments(LayoutFragment())
+        pagerAdapterView.addFragments(BedroomFragment())
+    }
 }
+
+
+

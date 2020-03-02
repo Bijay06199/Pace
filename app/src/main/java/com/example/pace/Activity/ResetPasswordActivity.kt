@@ -44,6 +44,7 @@ class ResetPasswordActivity : AppCompatActivity() {
 
             val intent= Intent(this@ResetPasswordActivity, PasswordResetSuccess::class.java)
             startActivity(intent)
+            finish()
         })
 
 
@@ -54,5 +55,10 @@ class ResetPasswordActivity : AppCompatActivity() {
             startActivity(intent)
         })
 
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
     }
 }

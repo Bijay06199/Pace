@@ -35,8 +35,13 @@
                     <FrameLayout
                         android:id="@+id/saleContainer"
                         android:layout_width="match_parent"
-
                         android:layout_height="300dp">
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/myViewPager1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            />
+
                     </FrameLayout>
 
 
@@ -442,9 +447,9 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp"
                     android:layout_marginLeft="20dp"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
+
 
 
 
@@ -456,64 +461,72 @@
                         android:background="#72000000"
                         android:orientation="horizontal"/>
 
-
-
                     <LinearLayout
-                        android:layout_width="60dp"
-                        android:layout_height="30dp"
-                        android:background="@drawable/smallayout_home"
-                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
                         android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/textView36"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="#000"
-                            android:textSize="12sp"
-                            android:text="4LDK" />
+                        <LinearLayout
+                            android:layout_width="60dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/smallayout_home"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView36"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000"
+                                android:textSize="12sp"
+                                android:text="4LDK" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="50dp"
+                            android:background="@drawable/smallayout_home"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView37"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000"
+                                android:textSize="12sp"
+                                android:text="Detached house" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:background="@drawable/smallayout_home"
+                            android:layout_marginLeft="30dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView38"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="#000"
+                                android:textSize="12sp"
+                                android:text="Near Subway" />
+                        </LinearLayout>
+
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="130dp"
-                        android:layout_height="30dp"
-                        android:layout_marginLeft="50dp"
-                        android:background="@drawable/smallayout_home"
-                        android:gravity="center"
-                        android:orientation="horizontal">
 
-                        <TextView
-                            android:id="@+id/textView37"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="#000"
-                            android:textSize="12sp"
-                            android:text="Detached house" />
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="100dp"
-                        android:layout_height="30dp"
-                        android:gravity="center"
-                        android:background="@drawable/smallayout_home"
-                        android:layout_marginLeft="30dp"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textView38"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textColor="#000"
-                            android:textSize="12sp"
-                            android:text="Near Subway" />
-                    </LinearLayout>
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:layout_marginLeft="20dp"
+
                     android:orientation="vertical">
 
                     <TextView
@@ -522,6 +535,7 @@
                         android:layout_height="wrap_content"
                         android:text="Kais Ville Homes is actually every mountain"
                         android:textColor="#201A16"
+                        android:layout_marginLeft="20dp"
                         android:textSize="14sp" />
 
                     <TextView
@@ -530,6 +544,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="#201A16"
                         android:textSize="14sp"
+                        android:layout_marginLeft="20dp"
                         android:text="home lover's dream come true. This residential" />
 
                     <TextView
@@ -538,6 +553,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="#201A16"
                         android:textSize="14sp"
+                        android:layout_marginLeft="20dp"
                         android:text="project in Kulu Manali(Himachal Pradesh)..." />
 
                     <TextView
@@ -546,86 +562,19 @@
                         android:layout_height="wrap_content"
                         android:textColor="#02BEB2"
                         android:textSize="14sp"
+                        android:layout_marginLeft="20dp"
                         android:text="more" />
+
+                    <LinearLayout
+                        android:id="@+id/imageView44"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/map2" />
                 </LinearLayout>
 
 
-                <androidx.coordinatorlayout.widget.CoordinatorLayout
-                    xmlns:android="http://schemas.android.com/apk/res/android"
-                    xmlns:app="http://schemas.android.com/apk/res-auto"
-                    android:id="@+id/coordinator"
-                    android:layout_width="match_parent"
-                    android:layout_height="140dp"
-                    android:background="@drawable/map11"
-                    android:layout_gravity="bottom">
 
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:id="@+id/fab"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:clickable="true"
-                        android:focusable="true"
-                        app:backgroundTint="#194CB4"
-                        android:src="@drawable/phone"
-                        app:layout_anchor="@id/bar" />
-
-
-
-
-                    <com.google.android.material.bottomappbar.BottomAppBar
-                        android:id="@+id/bar"
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_gravity="bottom"
-                        android:backgroundTint="#02BEB2"
-                        android:background="#02BEB2"
-
-                        >
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-
-                            <TextView
-                                style="?android:attr/borderlessButtonStyle"
-                                android:layout_width="0dp"
-                                android:id="@+id/requestVisit"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:background="?android:attr/selectableItemBackground"
-                                android:gravity="center"
-                                android:textSize="14sp"
-                                android:layout_gravity="center"
-                                android:orientation="vertical"
-                                android:text=""
-                                android:textAllCaps="false"
-                                android:textColor="#FFF">
-
-                            </TextView>
-
-                            <TextView
-                                style="?android:attr/borderlessButtonStyle"
-                                android:layout_width="0dp"
-                                android:id="@+id/email"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:textSize="11sp"
-                                android:background="?android:attr/selectableItemBackground"
-                                android:gravity="center"
-                                android:orientation="vertical"
-                                android:text=""
-                                android:textColor="#FFF">
-
-                            </TextView>
-
-
-
-                        </LinearLayout>
-
-                    </com.google.android.material.bottomappbar.BottomAppBar>
-
-                </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -879,7 +828,8 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
                         android:layout_marginBottom="50dp"
-                        android:text="20 Chome,Shibu City, Tokyo" />
+                        android:text="20 Chome,Shibu City, Tokyo"
+                        android:paddingBottom="30dp"/>
                 </LinearLayout>
 
 
@@ -888,7 +838,86 @@
         </ScrollView>
 
 
-    </LinearLayout>
 
+
+    </LinearLayout>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_alignParentBottom="true"
+        >
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            app:backgroundTint="#194CB4"
+            android:src="@drawable/phone"
+            app:layout_anchor="@id/bar" />
+
+
+
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:backgroundTint="#02BEB2"
+            app:fabCradleMargin="0dp"
+            app:fabCradleRoundedCornerRadius="0dp"
+            android:background="#02BEB2"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:id="@+id/requestVisit"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:textColor="#FFF">
+
+                </TextView>
+
+                <TextView
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:id="@+id/email"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textSize="11sp"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:text=""
+                    android:textColor="#FFF">
+
+                </TextView>
+
+
+
+            </LinearLayout>
+
+        </com.google.android.material.bottomappbar.BottomAppBar>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 </RelativeLayout>

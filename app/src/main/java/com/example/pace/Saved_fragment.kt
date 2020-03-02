@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TextView
 import com.example.pace.Activity.Fragments.AllFragment
+import kotlinx.android.synthetic.*
 
 /**
  * A simple [Fragment] subclass.
@@ -42,6 +43,9 @@ class Saved_fragment : Fragment() {
             fragmentTransaction.replace(R.id.fragment_container1, fragment)
             fragmentTransaction.addToBackStack(null)
             fragmentTransaction.commit()
+            clearFindViewByIdCache()
+
+
             all.setTextColor(resources.getColor(R.color.colorAccent))
             forRent.setTextColor(resources.getColor(R.color.saved))
             forSale.setTextColor(resources.getColor(R.color.saved))
@@ -65,6 +69,7 @@ class Saved_fragment : Fragment() {
             fragmentTransaction.replace(R.id.fragment_container1, fragment)
             fragmentTransaction.addToBackStack(null)
             fragmentTransaction.commit()
+            clearFindViewByIdCache()
             all.setTextColor(resources.getColor(R.color.colorAccent))
             forRent.setTextColor(resources.getColor(R.color.saved))
             forSale.setTextColor(resources.getColor(R.color.saved))
@@ -90,6 +95,7 @@ class Saved_fragment : Fragment() {
             fragmentTransaction.replace(R.id.fragment_container1, fragment)
             fragmentTransaction.addToBackStack(null)
             fragmentTransaction.commit()
+            clearFindViewByIdCache()
             all.setTextColor(resources.getColor(R.color.saved))
             forRent.setTextColor(resources.getColor(R.color.colorAccent))
             forSale.setTextColor(resources.getColor(R.color.saved))
@@ -111,6 +117,7 @@ class Saved_fragment : Fragment() {
             fragmentTransaction.replace(R.id.fragment_container1, fragment)
             fragmentTransaction.addToBackStack(null)
             fragmentTransaction.commit()
+            clearFindViewByIdCache()
             all.setTextColor(resources.getColor(R.color.saved))
             forRent.setTextColor(resources.getColor(R.color.saved))
             forSale.setTextColor(resources.getColor(R.color.colorAccent))
@@ -133,6 +140,7 @@ class Saved_fragment : Fragment() {
             fragmentTransaction.replace(R.id.fragment_container1, fragment)
             fragmentTransaction.addToBackStack(null)
             fragmentTransaction.commit()
+            clearFindViewByIdCache()
             all.setTextColor(resources.getColor(R.color.saved))
             forRent.setTextColor(resources.getColor(R.color.saved))
             forSale.setTextColor(resources.getColor(R.color.saved))

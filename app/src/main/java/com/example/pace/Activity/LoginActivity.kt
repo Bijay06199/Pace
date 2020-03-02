@@ -32,13 +32,13 @@ class LoginActivity : AppCompatActivity() {
 
 
 
-        btnLogin.text="Login"
-        txtHi.text="Hi there,"
+        btnLogin.text=getString(R.string.login)
+        txtHi.text=getString(R.string.hithere)
       //  txtEmail.text="Email"
-        txtForgotPassword.text="Forgot Password?"
-        txtOrLogin.text ="Or Login with social media"
-        txtDont.text="Don't have an account?"
-        txtRegister.text="Register"
+        txtForgotPassword.text=getString(R.string.forgotpassword)
+        txtOrLogin.text =getString(R.string.orloginwith)
+        txtDont.text=getString(R.string.donthavean)
+        txtRegister.text=getString(R.string.register)
 
 
         btnLogin.typeface= typeface
@@ -55,12 +55,14 @@ class LoginActivity : AppCompatActivity() {
             val intent= Intent(this@LoginActivity,
                 ForgetPassword_Activity::class.java)
             startActivity(intent)
+           // finish()
 
         })
 
         txtRegister.setOnClickListener(View.OnClickListener {
             val intent= Intent(this@LoginActivity, Register_Activity::class.java)
             startActivity(intent)
+           finish()
         })
 
 
@@ -68,12 +70,15 @@ class LoginActivity : AppCompatActivity() {
         btnLogin.setOnClickListener(View.OnClickListener {
             val intent =Intent(this@LoginActivity, NavigationActivity::class.java)
             startActivity(intent)
+           // finish()
         })
     }
 
 
-    override fun finish() {
-        super.finish()
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
+    }
     }
 
-}
+

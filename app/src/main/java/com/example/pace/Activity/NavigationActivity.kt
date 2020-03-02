@@ -22,17 +22,6 @@ class NavigationActivity : AppCompatActivity() {
 
 
 
-        val extras:Bundle?=intent.extras
-
-        if(extras!=null && extras.containsKey("flag")) {
-
-            val flag = extras.getBoolean("flag")
-
-
-            if (flag)
-            {
-            }
-        }
 
 
 
@@ -51,11 +40,15 @@ class NavigationActivity : AppCompatActivity() {
         }
 
 
+
+
+
         chat.setOnClickListener(View.OnClickListener {
             val fragment = Chat_fragment()
             val transaction = supportFragmentManager.beginTransaction()
             transaction.replace(R.id.fragment_container, fragment)
             transaction.commit()
+
             home.setTextColor(resources.getColor(R.color.saved))
             chat.setTextColor(resources.getColor(R.color.colorAccent))
             saved.setTextColor(resources.getColor(R.color.saved))
@@ -69,6 +62,7 @@ class NavigationActivity : AppCompatActivity() {
             val transaction = supportFragmentManager.beginTransaction()
             transaction.replace(R.id.fragment_container, fragment)
             transaction.commit()
+
 
             home.setTextColor(resources.getColor(R.color.colorAccent))
             chat.setTextColor(resources.getColor(R.color.saved))
@@ -84,6 +78,7 @@ class NavigationActivity : AppCompatActivity() {
             transaction.replace(R.id.fragment_container, fragment)
             transaction.commit()
 
+
             home.setTextColor(resources.getColor(R.color.saved))
             chat.setTextColor(resources.getColor(R.color.saved))
             saved.setTextColor(resources.getColor(R.color.colorAccent))
@@ -98,6 +93,7 @@ class NavigationActivity : AppCompatActivity() {
             transaction.replace(R.id.fragment_container, fragment)
             transaction.commit()
 
+
             home.setTextColor(resources.getColor(R.color.saved))
             chat.setTextColor(resources.getColor(R.color.saved))
             saved.setTextColor(resources.getColor(R.color.saved))
@@ -111,6 +107,7 @@ class NavigationActivity : AppCompatActivity() {
             transaction.replace(R.id.fragment_container, fragment)
             transaction.commit()
 
+
         })
 
 
@@ -119,6 +116,8 @@ class NavigationActivity : AppCompatActivity() {
             val transaction = supportFragmentManager.beginTransaction()
             transaction.replace(R.id.fragment_container, fragment)
             transaction.commit()
+
+
             home.setTextColor(resources.getColor(R.color.saved))
             chat.setTextColor(resources.getColor(R.color.saved))
             saved.setTextColor(resources.getColor(R.color.saved))
@@ -141,6 +140,9 @@ class NavigationActivity : AppCompatActivity() {
         user.typeface=typeface
     }
 
-
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
+    }
 
 }

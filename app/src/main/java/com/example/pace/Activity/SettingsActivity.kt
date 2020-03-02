@@ -18,5 +18,11 @@ class SettingsActivity : AppCompatActivity() {
         val iconbacksettings= findViewById<LinearLayout>(R.id.iconbacksettings)
 
 
+        iconbacksettings.setOnClickListener(View.OnClickListener {
+
+            finish()
+        })
+
+
     }
 }

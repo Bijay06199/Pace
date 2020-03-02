@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 
 /**
@@ -21,6 +22,9 @@ class ForSale_Fragment : Fragment() {
         val v = inflater.inflate(R.layout.fragment_sale, container, false)
 
         val saleSaved = v.findViewById<View>(R.id.saleSaved) as TextView
+
+
+
 
         saleSaved.setOnClickListener(View.OnClickListener {
 

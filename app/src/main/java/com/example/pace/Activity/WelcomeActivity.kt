@@ -1,6 +1,9 @@
 package com.example.pace.Activity
 
+import android.app.Activity
+import android.content.Context
 import android.content.Intent
+import android.content.res.Configuration
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,12 +13,21 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import com.example.pace.R
 import kotlinx.android.synthetic.main.activity_welcome.*
+import java.util.*
 
 class WelcomeActivity : AppCompatActivity() {
+   val count:Int=0
+    val tempInt:Int=0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        loadlocate()
         setContentView(R.layout.activity_welcome)
+       //checkFirstOpen()
+
+
+
+
 
         val typeface= Typeface.createFromAsset(assets,"Quicksand_Regular.ttf")
 
@@ -38,6 +50,10 @@ class WelcomeActivity : AppCompatActivity() {
 
 
 
+
+
+
+
         if(savedInstanceState==null){
 
 
@@ -45,6 +61,7 @@ class WelcomeActivity : AppCompatActivity() {
             ukTick.visibility=View.VISIBLE
             indonesiaTick.visibility=View.INVISIBLE
             vietnamTick.visibility=View.INVISIBLE
+            setlocate("en")
 
 
         }
@@ -53,6 +70,8 @@ class WelcomeActivity : AppCompatActivity() {
         btnConfirm.setOnClickListener(View.OnClickListener {
             val intent= Intent(this@WelcomeActivity, WelcomeSplash::class.java)
             startActivity(intent)
+            finish()
+
 
         })
 
@@ -65,6 +84,7 @@ class WelcomeActivity : AppCompatActivity() {
             ukTick.visibility=View.INVISIBLE
             indonesiaTick.visibility=View.INVISIBLE
             vietnamTick.visibility=View.INVISIBLE
+            setlocate("ja")
         })
 
 
@@ -77,6 +97,7 @@ class WelcomeActivity : AppCompatActivity() {
             ukTick.visibility=View.INVISIBLE
             indonesiaTick.visibility=View.VISIBLE
             vietnamTick.visibility=View.INVISIBLE
+            setlocate("in")
         })
 
         layoutUk.setOnClickListener(View.OnClickListener {
@@ -86,6 +107,7 @@ class WelcomeActivity : AppCompatActivity() {
             ukTick.visibility=View.VISIBLE
             indonesiaTick.visibility=View.INVISIBLE
             vietnamTick.visibility=View.INVISIBLE
+            setlocate("en")
 
 
         })
@@ -100,6 +122,7 @@ class WelcomeActivity : AppCompatActivity() {
             ukTick.visibility=View.INVISIBLE
             indonesiaTick.visibility=View.INVISIBLE
             vietnamTick.visibility=View.VISIBLE
+            setlocate("vi")
         })
 
 
@@ -123,4 +146,50 @@ class WelcomeActivity : AppCompatActivity() {
 
 
     }
+
+    private fun loadlocate() {
+        val sharedPreferences=getSharedPreferences("Settings", Activity.MODE_PRIVATE)
+        val language= sharedPreferences.getString("My lang","")
+        setlocate(language)
+
+    }
+
+
+
+    private fun setlocate(Lang: String?) {
+
+        val locale= Locale(Lang)
+
+        Locale.setDefault(locale)
+
+        val config= Configuration()
+
+        config.locale= locale
+        baseContext.resources.updateConfiguration(config,baseContext.resources.displayMetrics)
+
+        val editor= getSharedPreferences("Settings",Context.MODE_PRIVATE).edit()
+        editor.putString("My lang",Lang)
+        editor.apply()
+
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
+    }
+
+    private fun checkFirstOpen() {
+        val isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
+            .getBoolean("isFirstRun", true)
+        if (!isFirstRun)
+        {
+            val intent = Intent(this@WelcomeActivity, WelcomeSplash::class.java)
+            startActivity(intent)
+            finish()
+
+        }
+        getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit().putBoolean("isFirstRun",
+            false).apply()
+    }
+
 }

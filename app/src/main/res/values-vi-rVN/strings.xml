@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PACE</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="skip"><u>Bỏ qua ngay bây giờ</u></string>
+    <string name="login">Đăng nhập</string>
+    <string name="hithere">Xin chào</string>
+    <string name="forgotpassword">Quên mật khẩu?</string>
+    <string name="orloginwith">Hoặc Đăng nhập bằng phương tiện truyền thông xã hội</string>
+    <string name="donthavean">Bạn không có tài khoản?</string>
+    <string name="register">Đăng ký</string>
+    <string name="password">Mật khẩu</string>
+    <string name="email">E-mail</string>
+    <string name="createaccount">Tạo tài khoản</string>
+    <string name="gender">Giới tính</string>
+    <string name="agreewithterms">Tôi đồng ý với Điều khoản dịch vụ và chính sách quyền riêng tư</string>
+    <string name="alreadyhaveanaccount">Bạn co săn san để tạo một tai khoản?</string>
+    <string name="male">Nam giới</string>
+    <string name="female">Giống cái</string>
+    <string name="other">Khác</string>
+    <string name="fullname">Họ và tên</string>
+    <string name="confirm_password">Xác nhận mật khẩu</string>
+</resources>

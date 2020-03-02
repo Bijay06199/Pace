@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PACE</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="skip"><u>とりあえずスキップ</u></string>
+    <string name="login">ログインする</string>
+    <string name="hithere">こんにちは、</string>
+    <string name="forgotpassword">パスワードをお忘れですか？</string>
+    <string name="orloginwith">またはソーシャルメディアでログイン</string>
+    <string name="donthavean">アカウントを持っていないのですか？</string>
+    <string name="register">登録</string>
+    <string name="password">パスワード</string>
+    <string name="email">Eメール</string>
+    <string name="createaccount">アカウントを作成する</string>
+    <string name="gender">性別</string>
+    <string name="agreewithterms">利用規約とプライバシーポリシーに同意します</string>
+    <string name="alreadyhaveanaccount">すでにアカウントをお持ちですか？</string>
+    <string name="male">男性</string>
+    <string name="female">女性</string>
+    <string name="other">その他</string>
+    <string name="fullname">フルネーム</string>
+    <string name="confirm_password">パスワードを認証する</string>
+</resources>

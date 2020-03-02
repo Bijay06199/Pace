@@ -24,10 +24,11 @@
             android:orientation="horizontal">
 
             <ImageView
-                android:id="@+id/imageView25"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/imgBackArrow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_weight="1"
+                android:layout_gravity="center"
                 android:src="@drawable/backarrow" />
 
             <ImageView
@@ -36,12 +37,14 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
                 android:src="@drawable/profilepic1" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:layout_marginLeft="10dp"
                 android:orientation="vertical">
 
@@ -91,9 +94,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:gravity="center"
                     android:textSize="12sp"
-                    android:layout_marginLeft="5dp"
+                    android:padding="10dp"
                     android:text="Hi there" />
             </LinearLayout>
         </LinearLayout>
@@ -104,7 +106,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:gravity="right"
             android:orientation="horizontal">
@@ -113,10 +115,9 @@
 
             <LinearLayout
                 android:layout_width="100dp"
-                android:layout_height="40dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/chat_layout_received"
-                android:gravity="center"
                 android:orientation="horizontal">
 
                 <TextView
@@ -124,9 +125,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:gravity="center"
                     android:textColor="#FFF"
                     android:textSize="12sp"
+                    android:padding="10dp"
                     android:layout_marginLeft="5dp"
                     android:text="Hello there!!" />
             </LinearLayout>
@@ -140,7 +141,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:orientation="horizontal">
 
@@ -152,7 +153,7 @@
 
             <LinearLayout
                 android:layout_width="230dp"
-                android:layout_height="40dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/chat_layout_sent"
                 android:gravity="center"
@@ -164,7 +165,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                     android:textSize="12sp"
-                android:gravity="center"
+                    android:padding="10dp"
                 android:layout_marginLeft="5dp"
                 android:text="Please explain me about web application" />
             </LinearLayout>
@@ -174,7 +175,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:gravity="right"
             android:orientation="horizontal">
@@ -183,10 +184,9 @@
 
             <LinearLayout
                 android:layout_width="250dp"
-                android:layout_height="40dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/chat_layout_received"
-                android:gravity="center"
                 android:orientation="horizontal">
 
                 <TextView
@@ -194,9 +194,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:gravity="center"
                     android:textSize="12sp"
                     android:textColor="#FFF"
+                    android:padding="10dp"
                     android:layout_marginLeft="5dp"
                     android:text="Well i am not sure about web application" />
             </LinearLayout>
@@ -205,7 +205,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:gravity="right"
             android:orientation="horizontal">
@@ -214,7 +214,7 @@
 
             <LinearLayout
                 android:layout_width="200dp"
-                android:layout_height="40dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
                 android:background="@drawable/chat_layout_received"
                 android:gravity="center"
@@ -225,9 +225,9 @@
                     android:layout_width="190dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:gravity="center"
                     android:textColor="#FFF"
                     android:textSize="12sp"
+                    android:padding="10dp"
                     android:layout_marginLeft="5dp"
                     android:text="But i know about a one pice and naruto" />
             </LinearLayout>
@@ -237,7 +237,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:orientation="horizontal">
 
@@ -249,8 +249,9 @@
 
             <LinearLayout
                 android:layout_width="210dp"
-                android:layout_height="40dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
+                android:id="@+id/chatkk"
                 android:background="@drawable/chat_layout_sent"
                 android:gravity="center"
                 android:orientation="horizontal">
@@ -261,43 +262,61 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textSize="12sp"
-                    android:gravity="center"
+                    android:padding="10dp"
                     android:layout_marginLeft="5dp"
                     android:text="Are you kidding me" />
             </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="50dp"
             android:layout_gravity="bottom"
-            android:layout_alignParentBottom="true"
-            android:layout_marginTop="200dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginVertical="250dp"
             android:background="@drawable/forgot_password_layout"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingBottom="10dp">
 
 
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/ellipse"
+                android:gravity="center">
 
-            <TextView
+                <ImageView
+                    android:id="@+id/imageView45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/plus" />
+            </LinearLayout>
+
+            <EditText
                 android:id="@+id/textView16"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:layout_alignParentBottom="true"
                 android:layout_marginLeft="40dp"
-                android:layout_gravity="center"
-                android:textSize="12sp"
-                android:text=" A a" />
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint=" A a"
+                android:textCursorDrawable="@null"
+                android:textSize="12sp" />
 
             <ImageView
                 android:id="@+id/imageView29"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="280dp"
                 android:layout_gravity="center"
-                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="330dp"
+                android:layout_marginTop="10dp"
                 android:src="@drawable/smile" />
-        </LinearLayout>
+        </RelativeLayout>
 
     </LinearLayout>
 

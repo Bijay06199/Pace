@@ -10,6 +10,7 @@ import android.view.ViewGroup
 import android.widget.LinearLayout
 import com.example.pace.Activity.Chat1_Activity
 import com.example.pace.R
+import kotlinx.android.synthetic.*
 
 /**
  * A simple [Fragment] subclass.
@@ -37,6 +38,7 @@ class Chat_fragment : Fragment() {
 
             val intent = Intent (this@Chat_fragment.context, Chat1_Activity::class.java)
             startActivity(intent)
+            clearFindViewByIdCache()
 
         })
 

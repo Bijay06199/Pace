@@ -28,6 +28,7 @@ class ForgetPassword_Activity : AppCompatActivity() {
             val intent= Intent(this@ForgetPassword_Activity,
                 CodeActivity::class.java)
             startActivity(intent)
+            finish()
         })
 
 
@@ -35,6 +36,7 @@ class ForgetPassword_Activity : AppCompatActivity() {
 
             val intent= Intent(this@ForgetPassword_Activity, LoginActivity::class.java)
             startActivity(intent)
+
         })
 
 
@@ -53,5 +55,10 @@ class ForgetPassword_Activity : AppCompatActivity() {
 
 
 
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
     }
 }

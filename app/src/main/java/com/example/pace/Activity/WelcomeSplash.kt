@@ -43,12 +43,13 @@ class WelcomeSplash : AppCompatActivity() {
         requestWindowFeature(Window.FEATURE_NO_TITLE)
         super.onCreate(savedInstanceState)
 
-
+      //  checkFirstOpen()
 
 
 
         window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(R.layout.activity_welcome_splash)
+
 
 
 
@@ -60,6 +61,7 @@ class WelcomeSplash : AppCompatActivity() {
             val intent= Intent(this@WelcomeSplash, MainActivity::class.java)
             intent.flags= Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(intent)
+
         })
 
 
@@ -85,6 +87,8 @@ class WelcomeSplash : AppCompatActivity() {
           //  intent.flags= Intent.FLAG_ACTIVITY_CLEAR_TASK
           //  startActivity(intent)
       //  })
+
+
 
 
 
@@ -118,13 +122,15 @@ class WelcomeSplash : AppCompatActivity() {
 
                 else if(counter==3){
 
-
-          }
-
-                else{
               val intent= Intent(this@WelcomeSplash, MainActivity::class.java)
               intent.flags= Intent.FLAG_ACTIVITY_CLEAR_TASK
               startActivity(intent)
+              finish()
+          }
+
+                else{
+
+
               counter=1
 
           }
@@ -164,6 +170,8 @@ class WelcomeSplash : AppCompatActivity() {
                 val intent= Intent(this@WelcomeSplash, MainActivity::class.java)
                 intent.flags= Intent.FLAG_ACTIVITY_CLEAR_TASK
                 startActivity(intent)
+                finish()
+
 
             }
 
@@ -242,8 +250,24 @@ class WelcomeSplash : AppCompatActivity() {
             else -> page.alpha = 0f
         }
     }
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
+    }
 
+    private fun checkFirstOpen() {
+        val isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
+            .getBoolean("isFirstRun", true)
+        if (!isFirstRun)
+        {
+            val intent = Intent(this@WelcomeSplash, MainActivity::class.java)
+            startActivity(intent)
+            finish()
 
+        }
+        getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit().putBoolean("isFirstRun",
+            false).apply()
+    }
 
 
     }

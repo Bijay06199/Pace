@@ -110,19 +110,19 @@ checkMale.setOnClickListener(View.OnClickListener {
         edtEmail.setTypeface(typeface)
 
 
-        txtCreate.text="Create Account"
+        txtCreate.text=getString(R.string.createaccount)
        // txtFull.text="Full Name"
        // txtEmail.text="Email"
-        txtGender.text="Gender"
+        txtGender.text=getString(R.string.gender)
       //  txtPassword.text="Password"
       //  txtConfirm.text="Confirm Password"
-        txtAgree.text="I agree with Terms of service and Privacy policy"
-        btnRegister.text="Register"
-        txtAlready.text="Already have an account?"
-        txtLogin.text="Login"
-        txtMale.text="Male"
-        txtFemale.text="Female"
-        txtOther.text="Other"
+        txtAgree.text=getString(R.string.agreewithterms)
+        btnRegister.text=getString(R.string.register)
+        txtAlready.text=getString(R.string.alreadyhaveanaccount)
+        txtLogin.text=getString(R.string.login)
+        txtMale.text=getString(R.string.male)
+        txtFemale.text=getString(R.string.female)
+        txtOther.text=getString(R.string.other)
 
         txtCreate.typeface=typeface
        // txtFull.typeface=typeface
@@ -143,12 +143,14 @@ checkMale.setOnClickListener(View.OnClickListener {
             val intent= Intent(this@Register_Activity,
                 NavigationActivity::class.java)
             startActivity(intent)
+            finish()
         })
 
         txtLogin.setOnClickListener(View.OnClickListener {
 
             val intent = Intent (this@Register_Activity, LoginActivity::class.java)
             startActivity(intent)
+            finish()
         })
 
 
@@ -159,5 +161,9 @@ checkMale.setOnClickListener(View.OnClickListener {
 
     }
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
+    }
 
 }

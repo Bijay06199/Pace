@@ -24,7 +24,7 @@
 
                 android:orientation="vertical">
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="140dp"
                     android:background="@drawable/rectangle85"
@@ -39,14 +39,25 @@
                         android:textColor="#FFFF" />
 
                     <ImageView
-                        android:id="@+id/imageView20"
+                        android:id="@+id/imgheart"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="right"
-                        android:layout_marginTop="85dp"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginTop="115dp"
                         android:layout_marginRight="10dp"
+                        android:layout_marginLeft="350dp"
                         android:src="@drawable/heart" />
-                </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imgsavedheart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginTop="115dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="350dp"
+                        android:src="@drawable/savedheart" />
+            </RelativeLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -117,7 +128,7 @@
                 android:layout_marginTop="20dp"
                 android:orientation="vertical">
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="140dp"
                     android:background="@drawable/rectangle85"
@@ -132,14 +143,25 @@
                         android:textColor="#FFFF" />
 
                     <ImageView
-                        android:id="@+id/imageView201"
+                        android:id="@+id/imgheart1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="right"
-                        android:layout_marginTop="85dp"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginTop="115dp"
                         android:layout_marginRight="10dp"
+                        android:layout_marginLeft="350dp"
                         android:src="@drawable/heart" />
-                </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imgsavedheart1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginTop="115dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="350dp"
+                        android:src="@drawable/savedheart" />
+                </RelativeLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -178,6 +200,7 @@
                         android:layout_marginTop="10dp"
                         android:orientation="horizontal">
 
+
                         <ImageView
                             android:id="@+id/imageView211"
                             android:layout_width="wrap_content"
@@ -214,14 +237,14 @@
                 android:layout_marginTop="20dp"
                 android:orientation="vertical">
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="140dp"
                     android:background="@drawable/rectangle85"
                     android:orientation="vertical">
 
                     <Button
-                        android:id="@+id/button3112"
+                        android:id="@+id/button31121"
                         android:layout_width="48dp"
                         android:layout_height="25dp"
                         android:background="@drawable/rent_layout"
@@ -229,14 +252,25 @@
                         android:textColor="#FFFF" />
 
                     <ImageView
-                        android:id="@+id/imageView202"
+                        android:id="@+id/imgheart2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="right"
-                        android:layout_marginTop="85dp"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginTop="115dp"
                         android:layout_marginRight="10dp"
+                        android:layout_marginLeft="350dp"
                         android:src="@drawable/heart" />
-                </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imgsavedheart2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginTop="115dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="350dp"
+                        android:src="@drawable/savedheart" />
+                </RelativeLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -309,14 +343,14 @@
                 android:layout_marginTop="20dp"
                 android:orientation="vertical">
 
-                <LinearLayout
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="140dp"
                     android:background="@drawable/rectangle85"
                     android:orientation="vertical">
 
                     <Button
-                        android:id="@+id/button3113"
+                        android:id="@+id/button3112"
                         android:layout_width="48dp"
                         android:layout_height="25dp"
                         android:background="@drawable/rent_layout"
@@ -324,14 +358,24 @@
                         android:textColor="#FFFF" />
 
                     <ImageView
-                        android:id="@+id/imageView203"
+                        android:id="@+id/imgsavedheart3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginTop="115dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="350dp"
+                        android:src="@drawable/savedheart" />
+
+                    <ImageView
+                        android:id="@+id/imgheart3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="right"
                         android:layout_marginTop="85dp"
                         android:layout_marginRight="10dp"
                         android:src="@drawable/heart" />
-                </LinearLayout>
+                </RelativeLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"

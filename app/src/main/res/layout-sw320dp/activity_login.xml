@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -50,7 +50,7 @@
                     android:id="@+id/edtConfirm111"
                     android:layout_width="fill_parent"
                     android:layout_height="70dp"
-                    android:hint="Email"
+                    android:hint="@string/email"
                     android:textColor="#FFF"
                     android:backgroundTint="#FFF"
                     android:inputType="textEmailAddress" />
@@ -70,7 +70,7 @@
                     android:id="@+id/edtConfirm11"
                     android:layout_width="fill_parent"
                     android:layout_height="70dp"
-                    android:hint="Password"
+                    android:hint="@string/password"
                     android:textColor="#FFF"
                     android:backgroundTint="#FFF"
                     android:inputType="textPassword" />
@@ -160,4 +160,4 @@
     </LinearLayout>
 
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -179,11 +179,16 @@ class CodeActivity : AppCompatActivity() {
 
             val intent= Intent(this@CodeActivity, ResetPasswordActivity::class.java)
             startActivity(intent)
+            finish()
         })
 
 
     }
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
+    }
 
 
 }

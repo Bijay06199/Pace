@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PACE</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="skip"><u>Lewati sekarang</u></string>
+    <string name="login">Gabung</string>
+    <string name="hithere">Hai,</string>
+    <string name="forgotpassword">Tidak ingat kata sandi?</string>
+    <string name="orloginwith">Atau Login dengan media sosial</string>
+    <string name="donthavean">Belum punya akun?</string>
+    <string name="register">Daftar</string>
+    <string name="password">Kata sandi</string>
+    <string name="email">Surel</string>
+    <string name="createaccount">Buat Akun</string>
+    <string name="gender">Jenis kelamin</string>
+    <string name="agreewithterms">Saya setuju dengan Ketentuan Layanan dan Kebijakan Privasi</string>
+    <string name="alreadyhaveanaccount"> Sudah punya akun?</string>
+    <string name="male">Pria</string>
+    <string name="female">Perempuan</string>
+    <string name="other">Lain</string>
+    <string name="fullname">Nama lengkap</string>
+    <string name="confirm_password">konfirmasi sandi</string>
+</resources>

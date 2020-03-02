@@ -711,7 +711,7 @@
                                                 android:layout_height="wrap_content"
                                                 android:orientation="vertical">
 
-                                                <LinearLayout
+                                                <RelativeLayout
                                                     android:id="@+id/saleHome"
                                                     android:layout_width="250dp"
                                                     android:layout_height="140dp"
@@ -725,7 +725,28 @@
                                                         android:background="@drawable/rent_layout"
                                                         android:text="SALE"
                                                         android:textColor="#FFFF" />
-                                                </LinearLayout>
+
+
+                                                    <ImageView
+                                                        android:id="@+id/imgheart"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="end"
+                                                        android:layout_marginTop="115dp"
+                                                        android:layout_marginRight="10dp"
+                                                        android:layout_marginLeft="220dp"
+                                                        android:src="@drawable/heart" />
+
+                                                    <ImageView
+                                                        android:id="@+id/imgsavedheart"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="right|bottom"
+                                                        android:layout_marginTop="115dp"
+                                                        android:layout_marginRight="10dp"
+                                                        android:layout_marginLeft="220dp"
+                                                        android:src="@drawable/savedheart" />
+                                                </RelativeLayout>
 
                                                 <LinearLayout
                                                     android:layout_width="match_parent"
@@ -767,7 +788,7 @@
                                                 android:layout_marginLeft="10dp"
                                                 android:orientation="vertical">
 
-                                                <LinearLayout
+                                                <RelativeLayout
                                                     android:id="@+id/rentHome"
                                                     android:layout_width="250dp"
                                                     android:layout_height="140dp"
@@ -781,7 +802,27 @@
                                                         android:background="@drawable/sale_layout"
                                                         android:text="RENT"
                                                         android:textColor="#FFFF" />
-                                                </LinearLayout>
+
+                                                    <ImageView
+                                                        android:id="@+id/imgheart1"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="end"
+                                                        android:layout_marginTop="115dp"
+                                                        android:layout_marginRight="10dp"
+                                                        android:layout_marginLeft="220dp"
+                                                        android:src="@drawable/heart" />
+
+                                                    <ImageView
+                                                        android:id="@+id/imgsavedheart1"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="right|bottom"
+                                                        android:layout_marginTop="115dp"
+                                                        android:layout_marginRight="10dp"
+                                                        android:layout_marginLeft="220dp"
+                                                        android:src="@drawable/savedheart" />
+                                                </RelativeLayout>
 
                                                 <LinearLayout
                                                     android:layout_width="match_parent"
@@ -823,7 +864,7 @@
                                                 android:layout_marginLeft="10dp"
                                                 android:orientation="vertical">
 
-                                                <LinearLayout
+                                                <RelativeLayout
                                                     android:id="@+id/saleHome1"
                                                     android:layout_width="250dp"
                                                     android:layout_height="140dp"
@@ -837,7 +878,27 @@
                                                         android:background="@drawable/rent_layout"
                                                         android:text="SALE"
                                                         android:textColor="#FFFF" />
-                                                </LinearLayout>
+                                                    <ImageView
+                                                        android:id="@+id/imgheart0"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="end"
+                                                        android:layout_marginTop="115dp"
+                                                        android:layout_marginRight="10dp"
+                                                        android:layout_marginLeft="220dp"
+                                                        android:src="@drawable/heart" />
+
+                                                    <ImageView
+                                                        android:id="@+id/imgsavedheart0"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="right|bottom"
+                                                        android:layout_marginTop="115dp"
+                                                        android:layout_marginRight="10dp"
+                                                        android:layout_marginLeft="220dp"
+                                                        android:src="@drawable/savedheart" />
+
+                                                </RelativeLayout>
 
                                                 <LinearLayout
                                                     android:layout_width="match_parent"
@@ -879,7 +940,7 @@
                                                 android:layout_marginLeft="10dp"
                                                 android:orientation="vertical">
 
-                                                <LinearLayout
+                                                <RelativeLayout
                                                     android:id="@+id/saleHome2"
                                                     android:layout_width="250dp"
                                                     android:layout_height="140dp"
@@ -893,7 +954,27 @@
                                                         android:background="@drawable/rent_layout"
                                                         android:text="SALE"
                                                         android:textColor="#FFFF" />
-                                                </LinearLayout>
+                                                    <ImageView
+                                                        android:id="@+id/imgheart2"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="end"
+                                                        android:layout_marginTop="115dp"
+                                                        android:layout_marginRight="10dp"
+                                                        android:layout_marginLeft="220dp"
+                                                        android:src="@drawable/heart" />
+
+                                                    <ImageView
+                                                        android:id="@+id/imgsavedheart2"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="right|bottom"
+                                                        android:layout_marginTop="115dp"
+                                                        android:layout_marginRight="10dp"
+                                                        android:layout_marginLeft="220dp"
+                                                        android:src="@drawable/savedheart" />
+
+                                                </RelativeLayout>
 
                                                 <LinearLayout
                                                     android:layout_width="match_parent"
@@ -935,7 +1016,7 @@
                                                 android:layout_marginLeft="10dp"
                                                 android:orientation="vertical">
 
-                                                <LinearLayout
+                                                <RelativeLayout
                                                     android:id="@+id/saleHome3"
                                                     android:layout_width="250dp"
                                                     android:layout_height="140dp"
@@ -949,7 +1030,27 @@
                                                         android:background="@drawable/rent_layout"
                                                         android:text="SALE"
                                                         android:textColor="#FFFF" />
-                                                </LinearLayout>
+
+                                                    <ImageView
+                                                        android:id="@+id/imgheart3"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="end"
+                                                        android:layout_marginTop="115dp"
+                                                        android:layout_marginRight="10dp"
+                                                        android:layout_marginLeft="220dp"
+                                                        android:src="@drawable/heart" />
+
+                                                    <ImageView
+                                                        android:id="@+id/imgsavedheart3"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="right|bottom"
+                                                        android:layout_marginTop="115dp"
+                                                        android:layout_marginRight="10dp"
+                                                        android:layout_marginLeft="220dp"
+                                                        android:src="@drawable/savedheart" />
+                                                </RelativeLayout>
 
                                                 <LinearLayout
                                                     android:layout_width="match_parent"
@@ -991,7 +1092,7 @@
                                                 android:layout_marginLeft="10dp"
                                                 android:orientation="vertical">
 
-                                                <LinearLayout
+                                                <RelativeLayout
                                                     android:id="@+id/saleHome4"
                                                     android:layout_width="250dp"
                                                     android:layout_height="140dp"
@@ -1005,7 +1106,27 @@
                                                         android:background="@drawable/rent_layout"
                                                         android:text="SALE"
                                                         android:textColor="#FFFF" />
-                                                </LinearLayout>
+                                                    <ImageView
+                                                        android:id="@+id/imgheart4"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="end"
+                                                        android:layout_marginTop="115dp"
+                                                        android:layout_marginRight="10dp"
+                                                        android:layout_marginLeft="220dp"
+                                                        android:src="@drawable/heart" />
+
+                                                    <ImageView
+                                                        android:id="@+id/imgsavedheart4"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="right|bottom"
+                                                        android:layout_marginTop="115dp"
+                                                        android:layout_marginRight="10dp"
+                                                        android:layout_marginLeft="220dp"
+                                                        android:src="@drawable/savedheart" />
+
+                                                </RelativeLayout>
 
                                                 <LinearLayout
                                                     android:layout_width="match_parent"
@@ -1047,7 +1168,7 @@
                                                 android:layout_marginLeft="10dp"
                                                 android:orientation="vertical">
 
-                                                <LinearLayout
+                                                <RelativeLayout
                                                     android:id="@+id/saleHome5"
                                                     android:layout_width="250dp"
                                                     android:layout_height="140dp"
@@ -1061,7 +1182,27 @@
                                                         android:background="@drawable/rent_layout"
                                                         android:text="SALE"
                                                         android:textColor="#FFFF" />
-                                                </LinearLayout>
+                                                    <ImageView
+                                                        android:id="@+id/imgheart5"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="end"
+                                                        android:layout_marginTop="115dp"
+                                                        android:layout_marginRight="10dp"
+                                                        android:layout_marginLeft="220dp"
+                                                        android:src="@drawable/heart" />
+
+                                                    <ImageView
+                                                        android:id="@+id/imgsavedheart5"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="right|bottom"
+                                                        android:layout_marginTop="115dp"
+                                                        android:layout_marginRight="10dp"
+                                                        android:layout_marginLeft="220dp"
+                                                        android:src="@drawable/savedheart" />
+
+                                                </RelativeLayout>
 
                                                 <LinearLayout
                                                     android:layout_width="match_parent"
@@ -1119,7 +1260,7 @@
 
                                                 android:orientation="vertical">
 
-                                                <LinearLayout
+                                                <RelativeLayout
                                                     android:id="@+id/saleHome1111"
                                                     android:layout_width="250dp"
                                                     android:layout_height="140dp"
@@ -1133,7 +1274,27 @@
                                                         android:background="@drawable/rent_layout"
                                                         android:text="SALE"
                                                         android:textColor="#FFFF" />
-                                                </LinearLayout>
+                                                    <ImageView
+                                                        android:id="@+id/imgheart6"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="end"
+                                                        android:layout_marginTop="115dp"
+                                                        android:layout_marginRight="10dp"
+                                                        android:layout_marginLeft="220dp"
+                                                        android:src="@drawable/heart" />
+
+                                                    <ImageView
+                                                        android:id="@+id/imgsavedheart6"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="right|bottom"
+                                                        android:layout_marginTop="115dp"
+                                                        android:layout_marginRight="10dp"
+                                                        android:layout_marginLeft="220dp"
+                                                        android:src="@drawable/savedheart" />
+
+                                                </RelativeLayout>
 
                                                 <LinearLayout
                                                     android:layout_width="match_parent"
@@ -1175,7 +1336,7 @@
                                                 android:layout_marginLeft="10dp"
                                                 android:orientation="vertical">
 
-                                                <LinearLayout
+                                                <RelativeLayout
                                                     android:id="@+id/rentHome111"
                                                     android:layout_width="250dp"
                                                     android:layout_height="140dp"
@@ -1189,7 +1350,26 @@
                                                         android:background="@drawable/sale_layout"
                                                         android:text="RENT"
                                                         android:textColor="#FFFF" />
-                                                </LinearLayout>
+                                                    <ImageView
+                                                        android:id="@+id/imgheart7"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="end"
+                                                        android:layout_marginTop="115dp"
+                                                        android:layout_marginRight="10dp"
+                                                        android:layout_marginLeft="220dp"
+                                                        android:src="@drawable/heart" />
+
+                                                    <ImageView
+                                                        android:id="@+id/imgsavedheart7"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="right|bottom"
+                                                        android:layout_marginTop="115dp"
+                                                        android:layout_marginRight="10dp"
+                                                        android:layout_marginLeft="220dp"
+                                                        android:src="@drawable/savedheart" />
+                                                </RelativeLayout>
 
                                                 <LinearLayout
                                                     android:layout_width="match_parent"
@@ -1231,7 +1411,7 @@
                                                 android:layout_marginLeft="10dp"
                                                 android:orientation="vertical">
 
-                                                <LinearLayout
+                                                <RelativeLayout
                                                     android:id="@+id/saleHome11"
                                                     android:layout_width="250dp"
                                                     android:layout_height="140dp"
@@ -1245,7 +1425,27 @@
                                                         android:background="@drawable/rent_layout"
                                                         android:text="SALE"
                                                         android:textColor="#FFFF" />
-                                                </LinearLayout>
+
+                                                    <ImageView
+                                                        android:id="@+id/imgheart8"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="end"
+                                                        android:layout_marginTop="115dp"
+                                                        android:layout_marginRight="10dp"
+                                                        android:layout_marginLeft="220dp"
+                                                        android:src="@drawable/heart" />
+
+                                                    <ImageView
+                                                        android:id="@+id/imgsavedheart8"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="right|bottom"
+                                                        android:layout_marginTop="115dp"
+                                                        android:layout_marginRight="10dp"
+                                                        android:layout_marginLeft="220dp"
+                                                        android:src="@drawable/savedheart" />
+                                                </RelativeLayout>
 
                                                 <LinearLayout
                                                     android:layout_width="match_parent"
@@ -1287,7 +1487,7 @@
                                                 android:layout_marginLeft="10dp"
                                                 android:orientation="vertical">
 
-                                                <LinearLayout
+                                                <RelativeLayout
                                                     android:id="@+id/saleHome21"
                                                     android:layout_width="250dp"
                                                     android:layout_height="140dp"
@@ -1301,7 +1501,28 @@
                                                         android:background="@drawable/rent_layout"
                                                         android:text="SALE"
                                                         android:textColor="#FFFF" />
-                                                </LinearLayout>
+
+                                                    <ImageView
+                                                        android:id="@+id/imgheart9"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="end"
+                                                        android:layout_marginTop="115dp"
+                                                        android:layout_marginRight="10dp"
+                                                        android:layout_marginLeft="220dp"
+                                                        android:src="@drawable/heart" />
+
+                                                    <ImageView
+                                                        android:id="@+id/imgsavedheart9"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="right|bottom"
+                                                        android:layout_marginTop="115dp"
+                                                        android:layout_marginRight="10dp"
+                                                        android:layout_marginLeft="220dp"
+                                                        android:src="@drawable/savedheart" />
+
+                                                </RelativeLayout>
 
                                                 <LinearLayout
                                                     android:layout_width="match_parent"
@@ -1343,7 +1564,7 @@
                                                 android:layout_marginLeft="10dp"
                                                 android:orientation="vertical">
 
-                                                <LinearLayout
+                                                <RelativeLayout
                                                     android:id="@+id/saleHome31"
                                                     android:layout_width="250dp"
                                                     android:layout_height="140dp"
@@ -1357,7 +1578,27 @@
                                                         android:background="@drawable/rent_layout"
                                                         android:text="SALE"
                                                         android:textColor="#FFFF" />
-                                                </LinearLayout>
+                                                    <ImageView
+                                                        android:id="@+id/imgheart9"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="end"
+                                                        android:layout_marginTop="115dp"
+                                                        android:layout_marginRight="10dp"
+                                                        android:layout_marginLeft="220dp"
+                                                        android:src="@drawable/heart" />
+
+                                                    <ImageView
+                                                        android:id="@+id/imgsavedheart9"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="right|bottom"
+                                                        android:layout_marginTop="115dp"
+                                                        android:layout_marginRight="10dp"
+                                                        android:layout_marginLeft="220dp"
+                                                        android:src="@drawable/savedheart" />
+
+                                                </RelativeLayout>
 
                                                 <LinearLayout
                                                     android:layout_width="match_parent"
@@ -1399,7 +1640,7 @@
                                                 android:layout_marginLeft="10dp"
                                                 android:orientation="vertical">
 
-                                                <LinearLayout
+                                                <RelativeLayout
                                                     android:id="@+id/saleHome9"
                                                     android:layout_width="250dp"
                                                     android:layout_height="140dp"
@@ -1413,7 +1654,27 @@
                                                         android:background="@drawable/rent_layout"
                                                         android:text="SALE"
                                                         android:textColor="#FFFF" />
-                                                </LinearLayout>
+                                                    <ImageView
+                                                        android:id="@+id/imgheart11"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="end"
+                                                        android:layout_marginTop="115dp"
+                                                        android:layout_marginRight="10dp"
+                                                        android:layout_marginLeft="220dp"
+                                                        android:src="@drawable/heart" />
+
+                                                    <ImageView
+                                                        android:id="@+id/imgsavedheart11"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="right|bottom"
+                                                        android:layout_marginTop="115dp"
+                                                        android:layout_marginRight="10dp"
+                                                        android:layout_marginLeft="220dp"
+                                                        android:src="@drawable/savedheart" />
+
+                                                </RelativeLayout>
 
                                                 <LinearLayout
                                                     android:layout_width="match_parent"
@@ -1455,7 +1716,7 @@
                                                 android:layout_marginLeft="10dp"
                                                 android:orientation="vertical">
 
-                                                <LinearLayout
+                                                <RelativeLayout
                                                     android:id="@+id/saleHome6"
                                                     android:layout_width="250dp"
                                                     android:layout_height="140dp"
@@ -1469,7 +1730,27 @@
                                                         android:background="@drawable/rent_layout"
                                                         android:text="SALE"
                                                         android:textColor="#FFFF" />
-                                                </LinearLayout>
+                                                    <ImageView
+                                                        android:id="@+id/imgheart22"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="end"
+                                                        android:layout_marginTop="115dp"
+                                                        android:layout_marginRight="10dp"
+                                                        android:layout_marginLeft="220dp"
+                                                        android:src="@drawable/heart" />
+
+                                                    <ImageView
+                                                        android:id="@+id/imgsavedheart22"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_gravity="right|bottom"
+                                                        android:layout_marginTop="115dp"
+                                                        android:layout_marginRight="10dp"
+                                                        android:layout_marginLeft="220dp"
+                                                        android:src="@drawable/savedheart" />
+
+                                                </RelativeLayout>
 
                                                 <LinearLayout
                                                     android:layout_width="match_parent"
@@ -5622,1720 +5903,6 @@
 
                                         </LinearLayout>
                                     </HorizontalScrollView>
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    <HorizontalScrollView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="10dp">
-
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:paddingLeft="10dp"
-                                            android:paddingRight="10dp"
-                                            android:orientation="horizontal">
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-
-                                                android:orientation="vertical">
-
-                                                <LinearLayout
-                                                    android:id="@+id/saleHo222"
-                                                    android:layout_width="250dp"
-                                                    android:layout_height="140dp"
-                                                    android:background="@drawable/rectangle85"
-                                                    android:orientation="vertical">
-
-                                                    <Button
-
-                                                        android:layout_width="48dp"
-                                                        android:layout_height="25dp"
-                                                        android:background="@drawable/rent_layout"
-                                                        android:text="SALE"
-                                                        android:textColor="#FFFF" />
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:orientation="vertical">
-
-                                                    <TextView
-
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="459 W 20th Ave"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="Shiho city, BC V5Y 2C7, Tokyo"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:layout_marginTop="5dp"
-                                                        android:text="$230,000,000"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp"
-                                                        android:textStyle="bold" />
-                                                </LinearLayout>
-                                            </LinearLayout>
-
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="match_parent"
-                                                android:layout_marginLeft="10dp"
-                                                android:orientation="vertical">
-
-                                                <LinearLayout
-                                                    android:id="@+id/rentHom2"
-                                                    android:layout_width="250dp"
-                                                    android:layout_height="140dp"
-                                                    android:background="@drawable/rectangle85"
-                                                    android:orientation="vertical">
-
-                                                    <Button
-                                                        android:id="@+id/butto3112"
-                                                        android:layout_width="48dp"
-                                                        android:layout_height="25dp"
-                                                        android:background="@drawable/sale_layout"
-                                                        android:text="RENT"
-                                                        android:textColor="#FFFF" />
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:orientation="vertical">
-
-                                                    <TextView
-                                                        android:id="@+id/textVie14112"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="459 W 20th Ave"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie15112"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="Shiho city, BC V5Y 2C7, Tokyo"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie16112"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:layout_marginTop="5dp"
-                                                        android:text="$230,000,000"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp"
-                                                        android:textStyle="bold" />
-                                                </LinearLayout>
-                                            </LinearLayout>
-
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginLeft="10dp"
-                                                android:orientation="vertical">
-
-                                                <LinearLayout
-                                                    android:id="@+id/salHome12"
-                                                    android:layout_width="250dp"
-                                                    android:layout_height="140dp"
-                                                    android:background="@drawable/rectangle85"
-                                                    android:orientation="vertical">
-
-                                                    <Button
-                                                        android:id="@+id/butto322"
-                                                        android:layout_width="48dp"
-                                                        android:layout_height="25dp"
-                                                        android:background="@drawable/rent_layout"
-                                                        android:text="SALE"
-                                                        android:textColor="#FFFF" />
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:orientation="vertical">
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1422"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="459 W 20th Ave"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1522"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="Shiho city, BC V5Y 2C7, Tokyo"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1622"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:layout_marginTop="5dp"
-                                                        android:text="$230,000,000"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp"
-                                                        android:textStyle="bold" />
-                                                </LinearLayout>
-                                            </LinearLayout>
-
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginLeft="10dp"
-                                                android:orientation="vertical">
-
-                                                <LinearLayout
-                                                    android:id="@+id/saleHom22"
-                                                    android:layout_width="250dp"
-                                                    android:layout_height="140dp"
-                                                    android:background="@drawable/rectangle85"
-                                                    android:orientation="vertical">
-
-                                                    <Button
-                                                        android:id="@+id/butto332"
-                                                        android:layout_width="48dp"
-                                                        android:layout_height="25dp"
-                                                        android:background="@drawable/rent_layout"
-                                                        android:text="SALE"
-                                                        android:textColor="#FFFF" />
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:orientation="vertical">
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1432"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="459 W 20th Ave"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1532"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="Shiho city, BC V5Y 2C7, Tokyo"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1632"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:layout_marginTop="5dp"
-                                                        android:text="$230,000,000"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp"
-                                                        android:textStyle="bold" />
-                                                </LinearLayout>
-                                            </LinearLayout>
-
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginLeft="10dp"
-                                                android:orientation="vertical">
-
-                                                <LinearLayout
-                                                    android:id="@+id/saleHom32"
-                                                    android:layout_width="250dp"
-                                                    android:layout_height="140dp"
-                                                    android:background="@drawable/rectangle85"
-                                                    android:orientation="vertical">
-
-                                                    <Button
-                                                        android:id="@+id/butto342"
-                                                        android:layout_width="48dp"
-                                                        android:layout_height="25dp"
-                                                        android:background="@drawable/rent_layout"
-                                                        android:text="SALE"
-                                                        android:textColor="#FFFF" />
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:orientation="vertical">
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1442"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="459 W 20th Ave"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1542"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="Shiho city, BC V5Y 2C7, Tokyo"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1642"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:layout_marginTop="5dp"
-                                                        android:text="$230,000,000"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp"
-                                                        android:textStyle="bold" />
-                                                </LinearLayout>
-                                            </LinearLayout>
-
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginLeft="10dp"
-                                                android:orientation="vertical">
-
-                                                <LinearLayout
-                                                    android:id="@+id/saleHom42"
-                                                    android:layout_width="250dp"
-                                                    android:layout_height="140dp"
-                                                    android:background="@drawable/rectangle85"
-                                                    android:orientation="vertical">
-
-                                                    <Button
-                                                        android:id="@+id/butto352"
-                                                        android:layout_width="48dp"
-                                                        android:layout_height="25dp"
-                                                        android:background="@drawable/rent_layout"
-                                                        android:text="SALE"
-                                                        android:textColor="#FFFF" />
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:orientation="vertical">
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1452"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="459 W 20th Ave"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1552"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="Shiho city, BC V5Y 2C7, Tokyo"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1652"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:layout_marginTop="5dp"
-                                                        android:text="$230,000,000"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp"
-                                                        android:textStyle="bold" />
-                                                </LinearLayout>
-                                            </LinearLayout>
-
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginLeft="10dp"
-                                                android:orientation="vertical">
-
-                                                <LinearLayout
-                                                    android:id="@+id/saleHom52"
-                                                    android:layout_width="250dp"
-                                                    android:layout_height="140dp"
-                                                    android:background="@drawable/rectangle85"
-                                                    android:orientation="vertical">
-
-                                                    <Button
-                                                        android:id="@+id/butto362"
-                                                        android:layout_width="48dp"
-                                                        android:layout_height="25dp"
-                                                        android:background="@drawable/rent_layout"
-                                                        android:text="SALE"
-                                                        android:textColor="#FFFF" />
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:orientation="vertical"
-                                                    android:paddingBottom="50dp">
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1462"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="459 W 20th Ave"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1562"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="Shiho city, BC V5Y 2C7, Tokyo"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie16622"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:layout_marginTop="5dp"
-                                                        android:text="$230,000,000"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp"
-                                                        android:textStyle="bold" />
-                                                </LinearLayout>
-                                            </LinearLayout>
-
-                                        </LinearLayout>
-                                    </HorizontalScrollView>
-
-
-
-
-
-
-                                    <HorizontalScrollView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="10dp">
-
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:paddingLeft="10dp"
-                                            android:paddingRight="10dp"
-                                            android:orientation="horizontal">
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-
-                                                android:orientation="vertical">
-
-                                                <LinearLayout
-                                                    android:id="@+id/saleHo222"
-                                                    android:layout_width="250dp"
-                                                    android:layout_height="140dp"
-                                                    android:background="@drawable/rectangle85"
-                                                    android:orientation="vertical">
-
-                                                    <Button
-
-                                                        android:layout_width="48dp"
-                                                        android:layout_height="25dp"
-                                                        android:background="@drawable/rent_layout"
-                                                        android:text="SALE"
-                                                        android:textColor="#FFFF" />
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:orientation="vertical">
-
-                                                    <TextView
-
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="459 W 20th Ave"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="Shiho city, BC V5Y 2C7, Tokyo"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:layout_marginTop="5dp"
-                                                        android:text="$230,000,000"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp"
-                                                        android:textStyle="bold" />
-                                                </LinearLayout>
-                                            </LinearLayout>
-
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="match_parent"
-                                                android:layout_marginLeft="10dp"
-                                                android:orientation="vertical">
-
-                                                <LinearLayout
-                                                    android:id="@+id/rentHom2"
-                                                    android:layout_width="250dp"
-                                                    android:layout_height="140dp"
-                                                    android:background="@drawable/rectangle85"
-                                                    android:orientation="vertical">
-
-                                                    <Button
-                                                        android:id="@+id/butto3112"
-                                                        android:layout_width="48dp"
-                                                        android:layout_height="25dp"
-                                                        android:background="@drawable/sale_layout"
-                                                        android:text="RENT"
-                                                        android:textColor="#FFFF" />
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:orientation="vertical">
-
-                                                    <TextView
-                                                        android:id="@+id/textVie14112"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="459 W 20th Ave"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie15112"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="Shiho city, BC V5Y 2C7, Tokyo"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie16112"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:layout_marginTop="5dp"
-                                                        android:text="$230,000,000"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp"
-                                                        android:textStyle="bold" />
-                                                </LinearLayout>
-                                            </LinearLayout>
-
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginLeft="10dp"
-                                                android:orientation="vertical">
-
-                                                <LinearLayout
-                                                    android:id="@+id/salHome12"
-                                                    android:layout_width="250dp"
-                                                    android:layout_height="140dp"
-                                                    android:background="@drawable/rectangle85"
-                                                    android:orientation="vertical">
-
-                                                    <Button
-                                                        android:id="@+id/butto322"
-                                                        android:layout_width="48dp"
-                                                        android:layout_height="25dp"
-                                                        android:background="@drawable/rent_layout"
-                                                        android:text="SALE"
-                                                        android:textColor="#FFFF" />
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:orientation="vertical">
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1422"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="459 W 20th Ave"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1522"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="Shiho city, BC V5Y 2C7, Tokyo"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1622"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:layout_marginTop="5dp"
-                                                        android:text="$230,000,000"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp"
-                                                        android:textStyle="bold" />
-                                                </LinearLayout>
-                                            </LinearLayout>
-
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginLeft="10dp"
-                                                android:orientation="vertical">
-
-                                                <LinearLayout
-                                                    android:id="@+id/saleHom22"
-                                                    android:layout_width="250dp"
-                                                    android:layout_height="140dp"
-                                                    android:background="@drawable/rectangle85"
-                                                    android:orientation="vertical">
-
-                                                    <Button
-                                                        android:id="@+id/butto332"
-                                                        android:layout_width="48dp"
-                                                        android:layout_height="25dp"
-                                                        android:background="@drawable/rent_layout"
-                                                        android:text="SALE"
-                                                        android:textColor="#FFFF" />
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:orientation="vertical">
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1432"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="459 W 20th Ave"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1532"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="Shiho city, BC V5Y 2C7, Tokyo"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1632"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:layout_marginTop="5dp"
-                                                        android:text="$230,000,000"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp"
-                                                        android:textStyle="bold" />
-                                                </LinearLayout>
-                                            </LinearLayout>
-
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginLeft="10dp"
-                                                android:orientation="vertical">
-
-                                                <LinearLayout
-                                                    android:id="@+id/saleHom32"
-                                                    android:layout_width="250dp"
-                                                    android:layout_height="140dp"
-                                                    android:background="@drawable/rectangle85"
-                                                    android:orientation="vertical">
-
-                                                    <Button
-                                                        android:id="@+id/butto342"
-                                                        android:layout_width="48dp"
-                                                        android:layout_height="25dp"
-                                                        android:background="@drawable/rent_layout"
-                                                        android:text="SALE"
-                                                        android:textColor="#FFFF" />
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:orientation="vertical">
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1442"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="459 W 20th Ave"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1542"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="Shiho city, BC V5Y 2C7, Tokyo"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1642"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:layout_marginTop="5dp"
-                                                        android:text="$230,000,000"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp"
-                                                        android:textStyle="bold" />
-                                                </LinearLayout>
-                                            </LinearLayout>
-
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginLeft="10dp"
-                                                android:orientation="vertical">
-
-                                                <LinearLayout
-                                                    android:id="@+id/saleHom42"
-                                                    android:layout_width="250dp"
-                                                    android:layout_height="140dp"
-                                                    android:background="@drawable/rectangle85"
-                                                    android:orientation="vertical">
-
-                                                    <Button
-                                                        android:id="@+id/butto352"
-                                                        android:layout_width="48dp"
-                                                        android:layout_height="25dp"
-                                                        android:background="@drawable/rent_layout"
-                                                        android:text="SALE"
-                                                        android:textColor="#FFFF" />
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:orientation="vertical">
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1452"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="459 W 20th Ave"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1552"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="Shiho city, BC V5Y 2C7, Tokyo"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1652"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:layout_marginTop="5dp"
-                                                        android:text="$230,000,000"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp"
-                                                        android:textStyle="bold" />
-                                                </LinearLayout>
-                                            </LinearLayout>
-
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginLeft="10dp"
-                                                android:orientation="vertical">
-
-                                                <LinearLayout
-                                                    android:id="@+id/saleHom52"
-                                                    android:layout_width="250dp"
-                                                    android:layout_height="140dp"
-                                                    android:background="@drawable/rectangle85"
-                                                    android:orientation="vertical">
-
-                                                    <Button
-                                                        android:id="@+id/butto362"
-                                                        android:layout_width="48dp"
-                                                        android:layout_height="25dp"
-                                                        android:background="@drawable/rent_layout"
-                                                        android:text="SALE"
-                                                        android:textColor="#FFFF" />
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:orientation="vertical"
-                                                    android:paddingBottom="50dp">
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1462"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="459 W 20th Ave"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1562"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="Shiho city, BC V5Y 2C7, Tokyo"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie16622"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:layout_marginTop="5dp"
-                                                        android:text="$230,000,000"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp"
-                                                        android:textStyle="bold" />
-                                                </LinearLayout>
-                                            </LinearLayout>
-
-                                        </LinearLayout>
-                                    </HorizontalScrollView>
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    <HorizontalScrollView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="10dp">
-
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:paddingLeft="10dp"
-                                            android:paddingRight="10dp"
-                                            android:orientation="horizontal">
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-
-                                                android:orientation="vertical">
-
-                                                <LinearLayout
-                                                    android:id="@+id/saleHo222"
-                                                    android:layout_width="250dp"
-                                                    android:layout_height="140dp"
-                                                    android:background="@drawable/rectangle85"
-                                                    android:orientation="vertical">
-
-                                                    <Button
-
-                                                        android:layout_width="48dp"
-                                                        android:layout_height="25dp"
-                                                        android:background="@drawable/rent_layout"
-                                                        android:text="SALE"
-                                                        android:textColor="#FFFF" />
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:orientation="vertical">
-
-                                                    <TextView
-
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="459 W 20th Ave"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="Shiho city, BC V5Y 2C7, Tokyo"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:layout_marginTop="5dp"
-                                                        android:text="$230,000,000"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp"
-                                                        android:textStyle="bold" />
-                                                </LinearLayout>
-                                            </LinearLayout>
-
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="match_parent"
-                                                android:layout_marginLeft="10dp"
-                                                android:orientation="vertical">
-
-                                                <LinearLayout
-                                                    android:id="@+id/rentHom2"
-                                                    android:layout_width="250dp"
-                                                    android:layout_height="140dp"
-                                                    android:background="@drawable/rectangle85"
-                                                    android:orientation="vertical">
-
-                                                    <Button
-                                                        android:id="@+id/butto3112"
-                                                        android:layout_width="48dp"
-                                                        android:layout_height="25dp"
-                                                        android:background="@drawable/sale_layout"
-                                                        android:text="RENT"
-                                                        android:textColor="#FFFF" />
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:orientation="vertical">
-
-                                                    <TextView
-                                                        android:id="@+id/textVie14112"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="459 W 20th Ave"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie15112"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="Shiho city, BC V5Y 2C7, Tokyo"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie16112"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:layout_marginTop="5dp"
-                                                        android:text="$230,000,000"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp"
-                                                        android:textStyle="bold" />
-                                                </LinearLayout>
-                                            </LinearLayout>
-
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginLeft="10dp"
-                                                android:orientation="vertical">
-
-                                                <LinearLayout
-                                                    android:id="@+id/salHome12"
-                                                    android:layout_width="250dp"
-                                                    android:layout_height="140dp"
-                                                    android:background="@drawable/rectangle85"
-                                                    android:orientation="vertical">
-
-                                                    <Button
-                                                        android:id="@+id/butto322"
-                                                        android:layout_width="48dp"
-                                                        android:layout_height="25dp"
-                                                        android:background="@drawable/rent_layout"
-                                                        android:text="SALE"
-                                                        android:textColor="#FFFF" />
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:orientation="vertical">
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1422"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="459 W 20th Ave"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1522"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="Shiho city, BC V5Y 2C7, Tokyo"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1622"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:layout_marginTop="5dp"
-                                                        android:text="$230,000,000"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp"
-                                                        android:textStyle="bold" />
-                                                </LinearLayout>
-                                            </LinearLayout>
-
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginLeft="10dp"
-                                                android:orientation="vertical">
-
-                                                <LinearLayout
-                                                    android:id="@+id/saleHom22"
-                                                    android:layout_width="250dp"
-                                                    android:layout_height="140dp"
-                                                    android:background="@drawable/rectangle85"
-                                                    android:orientation="vertical">
-
-                                                    <Button
-                                                        android:id="@+id/butto332"
-                                                        android:layout_width="48dp"
-                                                        android:layout_height="25dp"
-                                                        android:background="@drawable/rent_layout"
-                                                        android:text="SALE"
-                                                        android:textColor="#FFFF" />
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:orientation="vertical">
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1432"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="459 W 20th Ave"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1532"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="Shiho city, BC V5Y 2C7, Tokyo"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1632"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:layout_marginTop="5dp"
-                                                        android:text="$230,000,000"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp"
-                                                        android:textStyle="bold" />
-                                                </LinearLayout>
-                                            </LinearLayout>
-
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginLeft="10dp"
-                                                android:orientation="vertical">
-
-                                                <LinearLayout
-                                                    android:id="@+id/saleHom32"
-                                                    android:layout_width="250dp"
-                                                    android:layout_height="140dp"
-                                                    android:background="@drawable/rectangle85"
-                                                    android:orientation="vertical">
-
-                                                    <Button
-                                                        android:id="@+id/butto342"
-                                                        android:layout_width="48dp"
-                                                        android:layout_height="25dp"
-                                                        android:background="@drawable/rent_layout"
-                                                        android:text="SALE"
-                                                        android:textColor="#FFFF" />
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:orientation="vertical">
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1442"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="459 W 20th Ave"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1542"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="Shiho city, BC V5Y 2C7, Tokyo"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1642"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:layout_marginTop="5dp"
-                                                        android:text="$230,000,000"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp"
-                                                        android:textStyle="bold" />
-                                                </LinearLayout>
-                                            </LinearLayout>
-
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginLeft="10dp"
-                                                android:orientation="vertical">
-
-                                                <LinearLayout
-                                                    android:id="@+id/saleHom42"
-                                                    android:layout_width="250dp"
-                                                    android:layout_height="140dp"
-                                                    android:background="@drawable/rectangle85"
-                                                    android:orientation="vertical">
-
-                                                    <Button
-                                                        android:id="@+id/butto352"
-                                                        android:layout_width="48dp"
-                                                        android:layout_height="25dp"
-                                                        android:background="@drawable/rent_layout"
-                                                        android:text="SALE"
-                                                        android:textColor="#FFFF" />
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:orientation="vertical">
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1452"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="459 W 20th Ave"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1552"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="Shiho city, BC V5Y 2C7, Tokyo"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1652"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:layout_marginTop="5dp"
-                                                        android:text="$230,000,000"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp"
-                                                        android:textStyle="bold" />
-                                                </LinearLayout>
-                                            </LinearLayout>
-
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginLeft="10dp"
-                                                android:orientation="vertical">
-
-                                                <LinearLayout
-                                                    android:id="@+id/saleHom52"
-                                                    android:layout_width="250dp"
-                                                    android:layout_height="140dp"
-                                                    android:background="@drawable/rectangle85"
-                                                    android:orientation="vertical">
-
-                                                    <Button
-                                                        android:id="@+id/butto362"
-                                                        android:layout_width="48dp"
-                                                        android:layout_height="25dp"
-                                                        android:background="@drawable/rent_layout"
-                                                        android:text="SALE"
-                                                        android:textColor="#FFFF" />
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:orientation="vertical"
-                                                    android:paddingBottom="50dp">
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1462"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="459 W 20th Ave"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1562"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="Shiho city, BC V5Y 2C7, Tokyo"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie16622"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:layout_marginTop="5dp"
-                                                        android:text="$230,000,000"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp"
-                                                        android:textStyle="bold" />
-                                                </LinearLayout>
-                                            </LinearLayout>
-
-                                        </LinearLayout>
-                                    </HorizontalScrollView>
-
-
-
-
-
-
-
-
-                                    <HorizontalScrollView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginTop="10dp">
-
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:paddingLeft="10dp"
-                                            android:paddingRight="10dp"
-                                            android:orientation="horizontal">
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-
-                                                android:orientation="vertical">
-
-                                                <LinearLayout
-                                                    android:id="@+id/saleHo222"
-                                                    android:layout_width="250dp"
-                                                    android:layout_height="140dp"
-                                                    android:background="@drawable/rectangle85"
-                                                    android:orientation="vertical">
-
-                                                    <Button
-
-                                                        android:layout_width="48dp"
-                                                        android:layout_height="25dp"
-                                                        android:background="@drawable/rent_layout"
-                                                        android:text="SALE"
-                                                        android:textColor="#FFFF" />
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:orientation="vertical">
-
-                                                    <TextView
-
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="459 W 20th Ave"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="Shiho city, BC V5Y 2C7, Tokyo"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:layout_marginTop="5dp"
-                                                        android:text="$230,000,000"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp"
-                                                        android:textStyle="bold" />
-                                                </LinearLayout>
-                                            </LinearLayout>
-
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="match_parent"
-                                                android:layout_marginLeft="10dp"
-                                                android:orientation="vertical">
-
-                                                <LinearLayout
-                                                    android:id="@+id/rentHom2"
-                                                    android:layout_width="250dp"
-                                                    android:layout_height="140dp"
-                                                    android:background="@drawable/rectangle85"
-                                                    android:orientation="vertical">
-
-                                                    <Button
-                                                        android:id="@+id/butto3112"
-                                                        android:layout_width="48dp"
-                                                        android:layout_height="25dp"
-                                                        android:background="@drawable/sale_layout"
-                                                        android:text="RENT"
-                                                        android:textColor="#FFFF" />
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:orientation="vertical">
-
-                                                    <TextView
-                                                        android:id="@+id/textVie14112"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="459 W 20th Ave"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie15112"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="Shiho city, BC V5Y 2C7, Tokyo"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie16112"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:layout_marginTop="5dp"
-                                                        android:text="$230,000,000"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp"
-                                                        android:textStyle="bold" />
-                                                </LinearLayout>
-                                            </LinearLayout>
-
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginLeft="10dp"
-                                                android:orientation="vertical">
-
-                                                <LinearLayout
-                                                    android:id="@+id/salHome12"
-                                                    android:layout_width="250dp"
-                                                    android:layout_height="140dp"
-                                                    android:background="@drawable/rectangle85"
-                                                    android:orientation="vertical">
-
-                                                    <Button
-                                                        android:id="@+id/butto322"
-                                                        android:layout_width="48dp"
-                                                        android:layout_height="25dp"
-                                                        android:background="@drawable/rent_layout"
-                                                        android:text="SALE"
-                                                        android:textColor="#FFFF" />
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:orientation="vertical">
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1422"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="459 W 20th Ave"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1522"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="Shiho city, BC V5Y 2C7, Tokyo"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1622"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:layout_marginTop="5dp"
-                                                        android:text="$230,000,000"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp"
-                                                        android:textStyle="bold" />
-                                                </LinearLayout>
-                                            </LinearLayout>
-
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginLeft="10dp"
-                                                android:orientation="vertical">
-
-                                                <LinearLayout
-                                                    android:id="@+id/saleHom22"
-                                                    android:layout_width="250dp"
-                                                    android:layout_height="140dp"
-                                                    android:background="@drawable/rectangle85"
-                                                    android:orientation="vertical">
-
-                                                    <Button
-                                                        android:id="@+id/butto332"
-                                                        android:layout_width="48dp"
-                                                        android:layout_height="25dp"
-                                                        android:background="@drawable/rent_layout"
-                                                        android:text="SALE"
-                                                        android:textColor="#FFFF" />
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:orientation="vertical">
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1432"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="459 W 20th Ave"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1532"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="Shiho city, BC V5Y 2C7, Tokyo"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1632"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:layout_marginTop="5dp"
-                                                        android:text="$230,000,000"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp"
-                                                        android:textStyle="bold" />
-                                                </LinearLayout>
-                                            </LinearLayout>
-
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginLeft="10dp"
-                                                android:orientation="vertical">
-
-                                                <LinearLayout
-                                                    android:id="@+id/saleHom32"
-                                                    android:layout_width="250dp"
-                                                    android:layout_height="140dp"
-                                                    android:background="@drawable/rectangle85"
-                                                    android:orientation="vertical">
-
-                                                    <Button
-                                                        android:id="@+id/butto342"
-                                                        android:layout_width="48dp"
-                                                        android:layout_height="25dp"
-                                                        android:background="@drawable/rent_layout"
-                                                        android:text="SALE"
-                                                        android:textColor="#FFFF" />
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:orientation="vertical">
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1442"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="459 W 20th Ave"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1542"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="Shiho city, BC V5Y 2C7, Tokyo"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1642"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:layout_marginTop="5dp"
-                                                        android:text="$230,000,000"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp"
-                                                        android:textStyle="bold" />
-                                                </LinearLayout>
-                                            </LinearLayout>
-
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginLeft="10dp"
-                                                android:orientation="vertical">
-
-                                                <LinearLayout
-                                                    android:id="@+id/saleHom42"
-                                                    android:layout_width="250dp"
-                                                    android:layout_height="140dp"
-                                                    android:background="@drawable/rectangle85"
-                                                    android:orientation="vertical">
-
-                                                    <Button
-                                                        android:id="@+id/butto352"
-                                                        android:layout_width="48dp"
-                                                        android:layout_height="25dp"
-                                                        android:background="@drawable/rent_layout"
-                                                        android:text="SALE"
-                                                        android:textColor="#FFFF" />
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:orientation="vertical">
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1452"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="459 W 20th Ave"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1552"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="Shiho city, BC V5Y 2C7, Tokyo"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1652"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:layout_marginTop="5dp"
-                                                        android:text="$230,000,000"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp"
-                                                        android:textStyle="bold" />
-                                                </LinearLayout>
-                                            </LinearLayout>
-
-
-                                            <LinearLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginLeft="10dp"
-                                                android:orientation="vertical">
-
-                                                <LinearLayout
-                                                    android:id="@+id/saleHom52"
-                                                    android:layout_width="250dp"
-                                                    android:layout_height="140dp"
-                                                    android:background="@drawable/rectangle85"
-                                                    android:orientation="vertical">
-
-                                                    <Button
-                                                        android:id="@+id/butto362"
-                                                        android:layout_width="48dp"
-                                                        android:layout_height="25dp"
-                                                        android:background="@drawable/rent_layout"
-                                                        android:text="SALE"
-                                                        android:textColor="#FFFF" />
-                                                </LinearLayout>
-
-                                                <LinearLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:orientation="vertical"
-                                                    android:paddingBottom="50dp">
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1462"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="459 W 20th Ave"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie1562"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:text="Shiho city, BC V5Y 2C7, Tokyo"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp" />
-
-                                                    <TextView
-                                                        android:id="@+id/textVie16622"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:layout_marginTop="5dp"
-                                                        android:text="$230,000,000"
-                                                        android:textColor="#201A16"
-                                                        android:textSize="14sp"
-                                                        android:textStyle="bold" />
-                                                </LinearLayout>
-                                            </LinearLayout>
-
-                                        </LinearLayout>
-                                    </HorizontalScrollView>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
