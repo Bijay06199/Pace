@@ -41,9 +41,11 @@ class Saved_fragment : Fragment() {
             val fragmentManager = activity!!.supportFragmentManager
             val fragmentTransaction = fragmentManager.beginTransaction()
             fragmentTransaction.replace(R.id.fragment_container1, fragment)
-            fragmentTransaction.addToBackStack(null)
+          //  fragmentTransaction.addToBackStack(null)
             fragmentTransaction.commit()
+
             clearFindViewByIdCache()
+
 
 
             all.setTextColor(resources.getColor(R.color.colorAccent))
@@ -67,9 +69,10 @@ class Saved_fragment : Fragment() {
             val fragmentManager = activity!!.supportFragmentManager
             val fragmentTransaction = fragmentManager.beginTransaction()
             fragmentTransaction.replace(R.id.fragment_container1, fragment)
-            fragmentTransaction.addToBackStack(null)
+          //  fragmentTransaction.addToBackStack(null)
             fragmentTransaction.commit()
             clearFindViewByIdCache()
+
             all.setTextColor(resources.getColor(R.color.colorAccent))
             forRent.setTextColor(resources.getColor(R.color.saved))
             forSale.setTextColor(resources.getColor(R.color.saved))
@@ -93,9 +96,10 @@ class Saved_fragment : Fragment() {
             val fragmentManager = activity!!.supportFragmentManager
             val fragmentTransaction = fragmentManager.beginTransaction()
             fragmentTransaction.replace(R.id.fragment_container1, fragment)
-            fragmentTransaction.addToBackStack(null)
+           // fragmentTransaction.addToBackStack(null)
             fragmentTransaction.commit()
             clearFindViewByIdCache()
+
             all.setTextColor(resources.getColor(R.color.saved))
             forRent.setTextColor(resources.getColor(R.color.colorAccent))
             forSale.setTextColor(resources.getColor(R.color.saved))
@@ -115,9 +119,10 @@ class Saved_fragment : Fragment() {
             val fragmentManager = activity!!.supportFragmentManager
             val fragmentTransaction = fragmentManager.beginTransaction()
             fragmentTransaction.replace(R.id.fragment_container1, fragment)
-            fragmentTransaction.addToBackStack(null)
+          //  fragmentTransaction.addToBackStack(null)
             fragmentTransaction.commit()
             clearFindViewByIdCache()
+
             all.setTextColor(resources.getColor(R.color.saved))
             forRent.setTextColor(resources.getColor(R.color.saved))
             forSale.setTextColor(resources.getColor(R.color.colorAccent))
@@ -138,9 +143,10 @@ class Saved_fragment : Fragment() {
             val fragmentManager = activity!!.supportFragmentManager
             val fragmentTransaction = fragmentManager.beginTransaction()
             fragmentTransaction.replace(R.id.fragment_container1, fragment)
-            fragmentTransaction.addToBackStack(null)
+          // fragmentTransaction.addToBackStack(null)
             fragmentTransaction.commit()
             clearFindViewByIdCache()
+
             all.setTextColor(resources.getColor(R.color.saved))
             forRent.setTextColor(resources.getColor(R.color.saved))
             forSale.setTextColor(resources.getColor(R.color.saved))
@@ -153,6 +159,7 @@ class Saved_fragment : Fragment() {
 
 
         }
+
 
 
         return v

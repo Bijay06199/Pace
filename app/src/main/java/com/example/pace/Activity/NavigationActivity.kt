@@ -1,5 +1,6 @@
 package com.example.pace.Activity
 
+import android.content.Intent
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -37,6 +38,11 @@ class NavigationActivity : AppCompatActivity() {
             user.setTextColor(resources.getColor(R.color.saved))
 
 
+
+
+
+
+
         }
 
 
@@ -48,6 +54,7 @@ class NavigationActivity : AppCompatActivity() {
             val transaction = supportFragmentManager.beginTransaction()
             transaction.replace(R.id.fragment_container, fragment)
             transaction.commit()
+
 
             home.setTextColor(resources.getColor(R.color.saved))
             chat.setTextColor(resources.getColor(R.color.colorAccent))
@@ -62,6 +69,7 @@ class NavigationActivity : AppCompatActivity() {
             val transaction = supportFragmentManager.beginTransaction()
             transaction.replace(R.id.fragment_container, fragment)
             transaction.commit()
+
 
 
             home.setTextColor(resources.getColor(R.color.colorAccent))
@@ -108,6 +116,7 @@ class NavigationActivity : AppCompatActivity() {
             transaction.commit()
 
 
+
         })
 
 
@@ -116,6 +125,7 @@ class NavigationActivity : AppCompatActivity() {
             val transaction = supportFragmentManager.beginTransaction()
             transaction.replace(R.id.fragment_container, fragment)
             transaction.commit()
+
 
 
             home.setTextColor(resources.getColor(R.color.saved))
@@ -140,9 +150,9 @@ class NavigationActivity : AppCompatActivity() {
         user.typeface=typeface
     }
 
-    override fun onBackPressed() {
-        super.onBackPressed()
-        finish()
+
+
+
     }
 
-}
+

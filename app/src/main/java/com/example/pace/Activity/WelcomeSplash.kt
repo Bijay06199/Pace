@@ -61,6 +61,7 @@ class WelcomeSplash : AppCompatActivity() {
             val intent= Intent(this@WelcomeSplash, MainActivity::class.java)
             intent.flags= Intent.FLAG_ACTIVITY_CLEAR_TASK
             startActivity(intent)
+            finish()
 
         })
 

@@ -5,6 +5,7 @@ import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageView
 import android.widget.TextView
 import com.example.pace.*
 import com.example.pace.Activity.Fragments.BedroomFragment
@@ -35,6 +36,21 @@ class SaleHome_Activity : AppCompatActivity() {
         val txtBathroom= findViewById<TextView>(R.id.txtBathroom)
         val txtLivingroom=findViewById<TextView>(R.id.txtLivingRoom)
         val txtLivingroom11=findViewById<TextView>(R.id.txtLivingRoom11)
+
+        val imgheart= findViewById<ImageView>(R.id.imgheart)
+        val imgsavedheart=findViewById<ImageView>(R.id.imgsavedheart)
+
+        imgheart.setOnClickListener(View.OnClickListener {
+
+            imgheart.visibility=View.INVISIBLE
+            imgsavedheart.visibility=View.VISIBLE
+        })
+
+        imgsavedheart.setOnClickListener(View.OnClickListener {
+
+            imgsavedheart.visibility=View.INVISIBLE
+            imgheart.visibility=View.VISIBLE
+        })
 
 
 

@@ -29,8 +29,8 @@ class PasswordResetSuccess : AppCompatActivity() {
 
         txtReset.text="Password reset"
         txtSuccess.text="successful"
-        txtCode.text="The code was sent to your mobile number, Please"
-        txtEnter.text="enter code"
+        txtCode.text="Your password has been successfully reset"
+
 
         txtReset.typeface=typeface
         txtSuccess.typeface=typeface

@@ -28,7 +28,7 @@ class ForRent_Fragment : Fragment() {
             val fragmentManager = activity!!.supportFragmentManager
             val fragmentTransaction = fragmentManager.beginTransaction()
             fragmentTransaction.replace(R.id.fragment_container1, fragment)
-            fragmentTransaction.addToBackStack(null)
+          //  fragmentTransaction.addToBackStack(null)
             fragmentTransaction.commit()
         })
 

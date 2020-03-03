@@ -46,7 +46,7 @@
 
 
 
-                    <LinearLayout
+                    <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
 
@@ -65,11 +65,21 @@
                             android:layout_height="wrap_content" />
 
                         <ImageView
-                            android:id="@+id/imageView35"
+                            android:id="@+id/imgheart"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="30dp"
                             android:src="@drawable/heart" />
+                        <ImageView
+                            android:id="@+id/imgsavedheart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="30dp"
+                            android:src="@drawable/savedheart" />
 
                         <ImageView
                             android:id="@+id/imageView36"
@@ -77,8 +87,10 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginTop="20dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
                             android:src="@drawable/iconshare" />
-                    </LinearLayout>
+                    </RelativeLayout>
 
 
                     <HorizontalScrollView
