@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
 
             val intent= Intent (this@MainActivity, Register_Activity::class.java)
             startActivity(intent)
-            finish()
+
         })
 
 
@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
 
             val intent= Intent(this@MainActivity,NavigationActivity::class.java)
             startActivity(intent)
-            finish()
+
         })
 
 

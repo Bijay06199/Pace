@@ -55,7 +55,7 @@ class LoginActivity : AppCompatActivity() {
             val intent= Intent(this@LoginActivity,
                 ForgetPassword_Activity::class.java)
             startActivity(intent)
-           // finish()
+            finish()
 
         })
 
@@ -70,7 +70,7 @@ class LoginActivity : AppCompatActivity() {
         btnLogin.setOnClickListener(View.OnClickListener {
             val intent =Intent(this@LoginActivity, NavigationActivity::class.java)
             startActivity(intent)
-           // finish()
+            finish()
         })
     }
 
