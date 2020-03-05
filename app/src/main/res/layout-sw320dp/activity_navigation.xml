@@ -43,7 +43,6 @@
         android:layout_height="70dp"
         android:layout_gravity="bottom"
         android:backgroundTint="#E4E2E2"
-        android:background="@drawable/search_layout"
         app:fabCradleRoundedCornerRadius="9dp"
 
         >

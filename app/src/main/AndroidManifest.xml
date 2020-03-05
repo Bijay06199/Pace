@@ -9,10 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.SettingsActivity"></activity>
+        <activity android:name=".Activity.EmailActivity"></activity>
+        <activity android:name=".Activity.Email_Activity" />
+        <activity android:name=".Activity.RequestVisit" />
+        <activity android:name=".Activity.SettingsActivity" />
         <activity android:name=".Activity.ShareActivity" />
         <activity android:name=".RentHome_Activity" />
-        <activity android:name=".Activity.SaleHome_Activity" />
+        <activity android:name=".SaleHomeActivity" />
         <activity android:name=".Activity.Chat1_Activity" />
         <activity android:name=".Activity.WelcomeSplash" />
         <activity android:name=".Activity.WelcomeActivity" />

@@ -11,6 +11,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import com.example.pace.Activity.SettingsActivity
 import com.example.pace.Activity.ShareActivity
+import kotlinx.android.synthetic.main.fragment_user.*
 
 /**
  * A simple [Fragment] subclass.
@@ -25,11 +26,17 @@ class User_fragment : Fragment() {
         val v = inflater.inflate(R.layout.fragment_user, container, false)
 
 
-        val txtShare=v.findViewById<TextView>(R.id.txtShare)
-        val imgShare= v.findViewById<ImageView>(R.id.imgShare)
-        val iconsettinguser= v.findViewById<ImageView>(R.id.iconSettinguser)
+        val txtShare=v.findViewById<TextView>(R.id.textShare)
+        val txtsettings= v.findViewById<TextView>(R.id.txtsettings)
+        val iconsettinguser= v.findViewById<ImageView>(R.id.iconsettinguser)
 
         iconsettinguser.setOnClickListener(View.OnClickListener {
+
+            val intent= Intent(this@User_fragment.activity, SettingsActivity::class.java)
+            startActivity(intent)
+        })
+
+        txtsettings.setOnClickListener(View.OnClickListener {
 
             val intent= Intent(this@User_fragment.activity, SettingsActivity::class.java)
             startActivity(intent)
@@ -42,11 +49,11 @@ class User_fragment : Fragment() {
 
 
 
-        imgShare.setOnClickListener(View.OnClickListener {
+       /* imgShare.setOnClickListener(View.OnClickListener {
             val intent= Intent(this@User_fragment.activity,ShareActivity::class.java)
             startActivity(intent)
 
-        })
+        })*/
 
         return v
     }

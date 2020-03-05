@@ -11,11 +11,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="320dp"
+        android:id="@+id/exterior"
         android:background="@drawable/rectangle85"
         android:orientation="vertical">
 
 
-            <LinearLayout
+
+        <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/overlay11"

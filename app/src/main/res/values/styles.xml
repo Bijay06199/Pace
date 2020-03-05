@@ -6,7 +6,16 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
+
+
         
+    </style>
+    
+    
+    <style name="popup_animation">
+        <item name="android:windowEnterAnimation">@anim/popupanim_in</item>
+        <item name="android:windowExitAnimation">@anim/popanim_out</item>
     </style>
     
     <string name="Register"><u>Register</u></string>

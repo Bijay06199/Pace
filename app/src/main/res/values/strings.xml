@@ -21,4 +21,6 @@
     <string name="other">Other</string>
     <string name="fullname">Full Name</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="contact_agent_lender">Contact Agent/lender</string>
+    <string name="jackson_michale">Jackson Michale</string>
 </resources>

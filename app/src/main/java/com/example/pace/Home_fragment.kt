@@ -7,15 +7,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.Window
 import android.widget.ImageView
-import android.widget.LinearLayout
 import android.widget.RelativeLayout
-import androidx.viewpager.widget.ViewPager
-import com.example.pace.Activity.SaleHome_Activity
 import com.example.pace.Adapter.ViewPagerAdapter
 import com.example.pace.Adapter.ViewPagerListener
-import kotlinx.android.synthetic.main.activity_welcome_splash.*
 import kotlinx.android.synthetic.main.fragment_home.*
 //import kotlinx.android.synthetic.main.fragment_home.myViewPager
 
@@ -212,7 +207,7 @@ class Home_fragment : Fragment() {
 
         saleHome.setOnClickListener(View.OnClickListener {
 
-            val intent= Intent(this@Home_fragment.context,SaleHome_Activity::class.java)
+            val intent= Intent(this@Home_fragment.context, SaleHomeActivity::class.java)
             startActivity(intent)
 
 
