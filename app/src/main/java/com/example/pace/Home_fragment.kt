@@ -51,8 +51,8 @@ class Home_fragment : Fragment() {
         val imgsavedheart7= v.findViewById<ImageView>(R.id.imgsavedheart7)
         val imgheart8= v.findViewById<ImageView>(R.id.imgheart8)
         val imgsavedheart8= v.findViewById<ImageView>(R.id.imgsavedheart8)
-        val imgheart9= v.findViewById<ImageView>(R.id.imgheart9)
-        val imgsavedheart9= v.findViewById<ImageView>(R.id.imgsavedheart9)
+       // val imgheart9= v.findViewById<ImageView>(R.id.imgheart9)
+      //  val imgsavedheart9= v.findViewById<ImageView>(R.id.imgsavedheart9)
         val imgheart11= v.findViewById<ImageView>(R.id.imgheart11)
         val imgsavedheart22= v.findViewById<ImageView>(R.id.imgsavedheart22)
         val imgheart22= v.findViewById<ImageView>(R.id.imgheart22)
@@ -190,7 +190,7 @@ class Home_fragment : Fragment() {
             imgsavedheart8.visibility=View.INVISIBLE
         })
 
-        imgheart9.setOnClickListener(View.OnClickListener {
+      /*  imgheart9.setOnClickListener(View.OnClickListener {
             imgsavedheart9.visibility=View.VISIBLE
             imgheart9.visibility=View.INVISIBLE
         })
@@ -198,7 +198,7 @@ class Home_fragment : Fragment() {
         imgsavedheart9.setOnClickListener(View.OnClickListener {
             imgheart9.visibility=View.VISIBLE
             imgsavedheart9.visibility=View.INVISIBLE
-        })
+        })*/
 
 
 

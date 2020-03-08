@@ -1,15 +1,23 @@
 package com.example.pace
 
+import android.content.Context
 import android.content.Intent
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Gravity
+import android.view.LayoutInflater
 import android.view.View
 import android.widget.ImageView
+import android.widget.LinearLayout
+import android.widget.PopupWindow
 import android.widget.TextView
+import androidx.transition.TransitionManager
+import com.example.pace.Activity.EmailActivity
 import com.example.pace.Activity.Fragments.BedroomFragment
 import com.example.pace.Activity.Fragments.ExteriorFragment
 import com.example.pace.Activity.NavigationActivity
+import com.example.pace.Activity.RequestVisit
 import com.example.pace.Adapter.ViewPagerAdapter
 import com.example.pace.Adapter.ViewPagerListener
 import kotlinx.android.synthetic.main.activity_sale_home.*
@@ -37,6 +45,90 @@ class RentHome_Activity : AppCompatActivity() {
 
         val imgheart= findViewById<ImageView>(R.id.imgheart)
         val imgsavedheart=findViewById<ImageView>(R.id.imgsavedheart)
+
+
+
+        email.setOnClickListener(View.OnClickListener {
+
+            val intent= Intent(this@RentHome_Activity, EmailActivity::class.java)
+            startActivity(intent)
+        })
+
+
+
+
+        requestVisit.setOnClickListener(View.OnClickListener {
+
+            val intent=Intent(this@RentHome_Activity, RequestVisit::class.java)
+            startActivity(intent)
+        })
+
+
+        fab.setOnClickListener(View.OnClickListener {
+
+
+
+
+            fab.setImageResource(R.drawable.cross)
+            val inflater: LayoutInflater =
+                getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
+            val view = inflater.inflate(R.layout.popup_layout, null)
+            overlap.setBackgroundColor(resources.getColor(R.color.TRANSPARENT))
+
+
+
+
+            val popupWindow = PopupWindow(
+                view, // Custom view to show in popup window
+                LinearLayout.LayoutParams.MATCH_PARENT, // Width of popup window
+                LinearLayout.LayoutParams.WRAP_CONTENT // Window height
+
+            )
+
+            popupWindow.height=700
+            popupWindow.elevation = 10.0F
+
+            popupWindow.animationStyle=R.style.popup_animation
+
+            popupWindow.isTouchable=true
+            popupWindow.dismiss()
+            popupWindow.isOutsideTouchable=true
+
+
+
+
+
+
+            popupWindow.setOnDismissListener(PopupWindow.OnDismissListener {
+
+
+                fab.setImageResource(R.drawable.phonechat)
+
+
+                overlap.setBackgroundColor(resources.getColor(R.color.transparentpop))
+
+            })
+
+            popupWindow.showAsDropDown(coordinator)
+
+
+
+
+
+            TransitionManager.beginDelayedTransition(overlap)
+            popupWindow.showAtLocation(
+                overlap, // Location to display popup window
+                Gravity.BOTTOM, // Exact position of layout to display popup
+                0, // X offset
+                0 // Y offset
+            )
+
+
+
+
+        })
+
+
 
         imgheart.setOnClickListener(View.OnClickListener {
 

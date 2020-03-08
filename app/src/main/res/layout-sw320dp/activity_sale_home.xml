@@ -996,7 +996,6 @@
     </LinearLayout>
 
 
-
     <LinearLayout
         android:id="@+id/overlap"
         android:layout_width="match_parent"
@@ -1019,6 +1018,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_anchor="@id/bar"
+            app:layout_dodgeInsetEdges="bottom"
             android:orientation="horizontal" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton

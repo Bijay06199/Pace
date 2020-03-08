@@ -4,6 +4,7 @@ import android.content.Context
 import android.media.audiofx.DynamicsProcessing
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
@@ -13,6 +14,7 @@ import androidx.transition.TransitionManager
 import com.example.pace.R
 import kotlinx.android.synthetic.main.activity_email2.*
 import kotlinx.android.synthetic.main.activity_sale_home.*
+import java.util.*
 import java.util.concurrent.Executors
 import java.util.concurrent.TimeUnit
 
@@ -34,7 +36,7 @@ class EmailActivity : AppCompatActivity() {
             val inflater: LayoutInflater =
                 getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
             val view = inflater.inflate(R.layout.popup_layout2, null)
-            overlap1.setBackgroundColor(resources.getColor(R.color.blur))
+            overlap1.setBackgroundResource(R.drawable.blurimage)
 
 
 
@@ -46,6 +48,14 @@ class EmailActivity : AppCompatActivity() {
 
             )
 
+            val handler = Handler()
+            handler.postDelayed(object:Runnable {
+                public override fun run() {
+                    //ToDo your function
+                    //hide your popup here
+                    popupWindow.dismiss()
+                }
+            }, 1500)
             popupWindow.elevation = 10.0F
             popupWindow.width=1000
             popupWindow.isFocusable=true
@@ -68,19 +78,6 @@ class EmailActivity : AppCompatActivity() {
 
 
 
-         //   popupWindow.showAsDropDown(relativelayout1)
-
-
-
-
-            //   val slideIn = Slide()
-            // slideIn.slideEdge = Gravity.BOTTOM
-            //  popupWindow.enterTransition = slideIn
-
-            // Slide animation for popup window exit transition
-            //   val slideOut = Slide()
-            // slideOut.slideEdge = Gravity.END
-            // popupWindow.exitTransition = slideOut
 
 
             TransitionManager.beginDelayedTransition(relativelayout1)

@@ -3,6 +3,7 @@ package com.example.pace
 import android.content.Context
 import android.content.Intent
 import android.graphics.Typeface
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.transition.Slide
@@ -61,6 +62,12 @@ class SaleHomeActivity : AppCompatActivity() {
 
 
 
+        txtRoute.setOnClickListener(View.OnClickListener {
+
+            startActivity(Intent(Intent.ACTION_VIEW, Uri.parse("https://www.google.com/maps")))
+
+        })
+
 
         email.setOnClickListener(View.OnClickListener {
 
@@ -100,8 +107,9 @@ requestVisit.setOnClickListener(View.OnClickListener {
 
                )
 
-               popupWindow.elevation = 10.0F
            popupWindow.height=700
+               popupWindow.elevation = 10.0F
+
                popupWindow.animationStyle=R.style.popup_animation
 
            popupWindow.isTouchable=true
@@ -114,6 +122,8 @@ requestVisit.setOnClickListener(View.OnClickListener {
 
 
                popupWindow.setOnDismissListener(PopupWindow.OnDismissListener {
+
+
                    fab.setImageResource(R.drawable.phonechat)
 
 
@@ -125,14 +135,6 @@ requestVisit.setOnClickListener(View.OnClickListener {
 
 
 
-               //   val slideIn = Slide()
-               // slideIn.slideEdge = Gravity.BOTTOM
-               //  popupWindow.enterTransition = slideIn
-
-               // Slide animation for popup window exit transition
-               //   val slideOut = Slide()
-               // slideOut.slideEdge = Gravity.END
-               // popupWindow.exitTransition = slideOut
 
 
                TransitionManager.beginDelayedTransition(overlap)

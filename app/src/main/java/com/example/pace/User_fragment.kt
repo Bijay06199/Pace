@@ -9,8 +9,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.pace.Activity.MainActivity
+import com.example.pace.Activity.Mortgage_Calculator
 import com.example.pace.Activity.SettingsActivity
 import com.example.pace.Activity.ShareActivity
+import kotlinx.android.synthetic.*
 import kotlinx.android.synthetic.main.fragment_user.*
 
 /**
@@ -29,6 +32,8 @@ class User_fragment : Fragment() {
         val txtShare=v.findViewById<TextView>(R.id.textShare)
         val txtsettings= v.findViewById<TextView>(R.id.txtsettings)
         val iconsettinguser= v.findViewById<ImageView>(R.id.iconsettinguser)
+        val txtmortgagecalculator=v.findViewById<TextView>(R.id.txtmortgagecalculator)
+        val txtlogoutMortgage=v.findViewById<TextView>(R.id.txtLogoutMortgage)
 
         iconsettinguser.setOnClickListener(View.OnClickListener {
 
@@ -48,12 +53,23 @@ class User_fragment : Fragment() {
         })
 
 
+        txtmortgagecalculator.setOnClickListener(View.OnClickListener {
 
-       /* imgShare.setOnClickListener(View.OnClickListener {
-            val intent= Intent(this@User_fragment.activity,ShareActivity::class.java)
+            val intent=Intent(this@User_fragment.activity,Mortgage_Calculator::class.java)
+            startActivity(intent)
+            clearFindViewByIdCache()
+        })
+
+
+
+        txtlogoutMortgage.setOnClickListener(View.OnClickListener {
+
+            val intent=Intent(this@User_fragment.activity,MainActivity::class.java)
             startActivity(intent)
 
-        })*/
+
+        })
+
 
         return v
     }

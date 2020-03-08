@@ -23,4 +23,6 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="contact_agent_lender">Contact Agent/lender</string>
     <string name="jackson_michale">Jackson Michale</string>
+    <string name="income">Yan Rupees</string>
+    <string name="principal_interest">$1,000</string>
 </resources>

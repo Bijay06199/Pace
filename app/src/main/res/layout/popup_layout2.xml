@@ -12,9 +12,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="#201A16"
-        android:layout_marginLeft="15dp"
-        android:layout_gravity="center"
-        android:text="Your email have sent successfully. You will be connected very soon" />
+
+        android:gravity="center"
+        android:text="Your email have sent successfully. You will be" />
+    <TextView
+        android:id="@+id/textView631"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#201A16"
+
+        android:gravity="center"
+        android:text=" connected very soon" />
 
 
 </LinearLayout>

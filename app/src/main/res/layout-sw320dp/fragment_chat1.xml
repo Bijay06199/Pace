@@ -268,56 +268,56 @@
             </LinearLayout>
         </LinearLayout>
 
-        <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="50dp"
-            android:layout_gravity="bottom"
-            android:layout_marginBottom="10dp"
-            android:layout_marginVertical="250dp"
-            android:background="@drawable/forgot_password_layout"
-            android:orientation="horizontal"
-            android:paddingBottom="10dp">
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp"
+        android:background="@drawable/forgot_password_layout"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp">
 
 
-            <LinearLayout
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_alignParentBottom="true"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/ellipse"
-                android:gravity="center">
-
-                <ImageView
-                    android:id="@+id/imageView45"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/plus" />
-            </LinearLayout>
-
-            <EditText
-                android:id="@+id/textView16"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_marginLeft="40dp"
-                android:background="@null"
-                android:gravity="center_vertical"
-                android:hint=" A a"
-                android:textCursorDrawable="@null"
-                android:textSize="12sp" />
+        <LinearLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/ellipse"
+            android:gravity="center">
 
             <ImageView
-                android:id="@+id/imageView29"
+                android:id="@+id/imageView45"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="330dp"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/smile" />
-        </RelativeLayout>
+                android:layout_weight="1"
+                app:srcCompat="@drawable/plus" />
+        </LinearLayout>
 
-    </LinearLayout>
+        <EditText
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint=" A a"
+            android:textCursorDrawable="@null"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/imageView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="330dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/smile" />
+    </RelativeLayout>
 
 </RelativeLayout>

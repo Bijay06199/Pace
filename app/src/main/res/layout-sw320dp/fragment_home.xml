@@ -151,8 +151,8 @@
                                 android:layout_height="wrap_content"
                                android:layout_marginLeft="5dp"
                                 android:layout_marginRight="5dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="15dp"
+                                android:layout_marginBottom="15dp"
                                 android:background="@drawable/home_background"
                                 android:backgroundTint="@color/cardview_light_background"
                                 android:elevation="10dp"
@@ -390,6 +390,7 @@
                                 android:layout_height="100dp"
                                 android:background="@drawable/home_layout"
                                 android:paddingLeft="10dp"
+                                android:layout_marginTop="10dp"
                                 android:orientation="horizontal">
 
                                 <LinearLayout
@@ -451,7 +452,7 @@
                                 android:id="@+id/textView12"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
+                                android:layout_marginTop="15dp"
                                 android:text="Popular cities"
                                 android:textColor="#201A16"
                                 android:textSize="15sp" />
@@ -1741,7 +1742,7 @@
                                                         android:textColor="#FFFF" />
 
                                                     <ImageView
-                                                        android:id="@+id/imgheart9"
+                                                        android:id="@+id/imgheart91"
                                                         android:layout_width="wrap_content"
                                                         android:layout_height="wrap_content"
                                                         android:layout_gravity="end"
@@ -1751,7 +1752,7 @@
                                                         android:src="@drawable/heart" />
 
                                                     <ImageView
-                                                        android:id="@+id/imgsavedheart9"
+                                                        android:id="@+id/imgsavedheart91"
                                                         android:layout_width="wrap_content"
                                                         android:layout_height="wrap_content"
                                                         android:layout_gravity="right|bottom"
@@ -2401,7 +2402,8 @@
                                                     android:layout_width="match_parent"
                                                     android:layout_height="wrap_content"
                                                     android:orientation="vertical"
-                                                    android:paddingBottom="50dp">
+                                                    android:paddingBottom="50dp"
+                                                    >
 
                                                     <TextView
 
@@ -2438,7 +2440,7 @@
                                     <HorizontalScrollView
                                         android:layout_width="match_parent"
                                         android:layout_height="wrap_content"
-                                        android:layout_marginTop="10dp">
+                                        >
 
                                         <LinearLayout
                                             android:layout_width="match_parent"
