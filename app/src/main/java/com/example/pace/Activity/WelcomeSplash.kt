@@ -9,6 +9,7 @@ import android.view.Window
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.viewpager.widget.ViewPager
 import com.example.pace.*
@@ -53,7 +54,7 @@ class WelcomeSplash : AppCompatActivity() {
 
 
 
-        val imgSkip= findViewById<ImageView>(R.id.imgSkip)
+        val imgSkip= findViewById<LinearLayout>(R.id.imgSkip)
 
 
         imgSkip.setOnClickListener(View.OnClickListener {

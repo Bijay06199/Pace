@@ -20,4 +20,21 @@
     <string name="other">Lain</string>
     <string name="fullname">Nama lengkap</string>
     <string name="confirm_password">konfirmasi sandi</string>
+    <string name="contact_agent_lender">Hubungi Agen/pemberi pinjaman</string>
+    <string name="jackson_michale">Jackson Michale</string>
+    <string name="income">Yan Rupees</string>
+    <string name="principal_interest">$1,000</string>
+    <string name="welcome_to_pace">Selamat Datang di Pace</string>
+    <string name="pace_is_a_real_estate_technology_application">Pace adalah aplikasi teknologi real estat.</string>
+    <string name="this_is_an_application_that_is_suitable_for_smart">Ini adalah aplikasi yang cocok untuk pintar</string>
+    <string name="living_through_search_real_state">hidup melalui pencarian keadaan sebenarnya</string>
+    <string name="easy_to_use">Mudah digunakan</string>
+    <string name="easy_to_rent_get_support_after_renting">Mudah disewa, dapatkan dukungan setelah menyewa</string>
+    <string name="and_find_similar_property">dan menemukan properti serupa</string>
+    <string name="secure_transparent_and_cost_effective">Aman, transparan, dan hemat biaya</string>
+    <string name="secure_and_transparent_information">Informasi yang aman dan transparan</string>
+    <string name="about_the_real_estate_that_you_want_at">tentang real estat yang Anda inginkan</string>
+    <string name="cost_effective_rate">tingkat biaya efektif</string>
+    <string name="skipwelcome">Melewatkan</string>
+    <string name="next">Lanjut</string>
 </resources>

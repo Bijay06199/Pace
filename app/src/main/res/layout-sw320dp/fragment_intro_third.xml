@@ -36,7 +36,7 @@
             android:layout_marginTop="30dp"
             android:textSize="28sp"
             android:textColor="#194CB4"
-            android:text="Secure, transparent and cost-effective" />
+            android:text="@string/secure_transparent_and_cost_effective" />
 
         <TextView
             android:id="@+id/secureSubtitle"
@@ -46,7 +46,7 @@
             android:layout_marginTop="20dp"
             android:textSize="16sp"
             android:textColor="#201A16"
-            android:text="Secure and transparent information " />
+            android:text="@string/secure_and_transparent_information" />
 
         <TextView
             android:id="@+id/secureSubtitle1"
@@ -55,7 +55,7 @@
             android:gravity="center"
             android:textSize="16sp"
             android:textColor="#201A16"
-            android:text="about the real estate that you want at " />
+            android:text="@string/about_the_real_estate_that_you_want_at" />
 
 
 
@@ -66,7 +66,7 @@
             android:gravity="center"
             android:textSize="16sp"
             android:textColor="#201A16"
-            android:text="cost effective rate " />
+            android:text="@string/cost_effective_rate" />
 
 
 

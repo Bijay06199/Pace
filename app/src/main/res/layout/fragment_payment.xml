@@ -161,7 +161,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#454555"
-                android:text="@string/principal_interest" />
+                android:text="$" />
+
+            <TextView
+                android:id="@+id/txtHomeInsurance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#454555"
+                android:text="" />
+
         </LinearLayout>
 
 
@@ -200,7 +208,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#454555"
-                android:text="@string/principal_interest" />
+                android:text="$" />
+            <TextView
+                android:id="@+id/txtMortgageInsurance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#454555"
+                android:text="" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -224,15 +239,20 @@
                 android:textColor="#454555"
                 android:text="" />
 
-            <ImageView
-                android:id="@+id/imageView61"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/edit" />
+            <EditText
+                android:id="@+id/imgPrice"
+                android:layout_width="18dp"
+                android:cursorVisible="false"
+                android:inputType="number"
+                android:contextClickable="true"
+                android:textColor="@color/underline"
+                android:layout_height="18dp"
+                android:background="@drawable/edit" />
+
 
         </LinearLayout>
         <SeekBar
-            android:id="@+id/seekBar"
+            android:id="@+id/seekPrice"
             android:layout_width="match_parent"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="-10dp"
@@ -262,15 +282,18 @@
                 android:textColor="#454555"
                 android:text="" />
 
-            <ImageView
-                android:id="@+id/imageView613"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/edit" />
+            <EditText
+                android:id="@+id/imgDownpayment"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:cursorVisible="false"
+                android:inputType="number"
+                android:textColor="@color/underline"
+                android:background="@drawable/edit" />
 
         </LinearLayout>
         <SeekBar
-            android:id="@+id/seekBar1"
+            android:id="@+id/seekDownPayment"
             android:layout_width="match_parent"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="-10dp"
@@ -300,15 +323,18 @@
                 android:textColor="#454555"
                 android:text="" />
 
-            <ImageView
-                android:id="@+id/imageView614"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/edit" />
+            <EditText
+                android:id="@+id/imgInterestRate"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:cursorVisible="false"
+                android:inputType="number"
+                android:textColor="@color/underline"
+                android:background="@drawable/edit" />
 
         </LinearLayout>
         <SeekBar
-            android:id="@+id/seekBar2"
+            android:id="@+id/seekInterestRate"
             android:layout_width="match_parent"
             android:layout_marginTop="5dp"
             android:layout_marginLeft="-10dp"

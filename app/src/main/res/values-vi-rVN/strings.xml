@@ -20,4 +20,22 @@
     <string name="other">Khác</string>
     <string name="fullname">Họ và tên</string>
     <string name="confirm_password">Xác nhận mật khẩu</string>
+    <string name="contact_agent_lender">Liên hệ đại lý/người cho vay</string>
+    <string name="jackson_michale">Jackson Michale</string>
+    <string name="income">Yan Rupees</string>
+    <string name="principal_interest">$1,000</string>
+    <string name="welcome_to_pace">Chào mừng bạn đến Pace</string>
+    <string name="pace_is_a_real_estate_technology_application">Pace là một ứng dụng công nghệ bất động sản.</string>
+    <string name="this_is_an_application_that_is_suitable_for_smart">Đây là một ứng dụng phù hợp với thông minh</string>
+    <string name="living_through_search_real_state">sống qua tìm kiếm trạng thái thực</string>
+    <string name="easy_to_use">Dễ sử dụng</string>
+    <string name="easy_to_rent_get_support_after_renting">Dễ dàng thuê, nhận hỗ trợ sau khi thuê</string>
+    <string name="and_find_similar_property">và tìm tài sản tương tự</string>
+    <string name="secure_transparent_and_cost_effective">An toàn, minh bạch và tiết kiệm chi phí</string>
+    <string name="secure_and_transparent_information">Thông tin an toàn và minh bạch</string>
+    <string name="about_the_real_estate_that_you_want_at">về bất động sản mà bạn muốn</string>
+    <string name="cost_effective_rate">chi phí hiệu quả
+</string>
+    <string name="skipwelcome">Nhảy</string>
+    <string name="next">Kế tiếp</string>
 </resources>

@@ -78,8 +78,9 @@
 
             <TextView
                 android:id="@+id/txtForgotPassword"
-                android:layout_width="154sp"
-                android:layout_height="30sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
                 android:layout_gravity="center"
                 android:layout_marginLeft="5dp"
                 android:layout_marginTop="30dp"

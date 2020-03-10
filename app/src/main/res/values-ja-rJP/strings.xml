@@ -20,4 +20,21 @@
     <string name="other">その他</string>
     <string name="fullname">フルネーム</string>
     <string name="confirm_password">パスワードを認証する</string>
+    <string name="contact_agent_lender">エージェント/貸し手に連絡する</string>
+    <string name="jackson_michale">Jackson Michale</string>
+    <string name="income">Yan Rupees</string>
+    <string name="principal_interest">$1,000</string>
+    <string name="welcome_to_pace">へようこそ Pace</string>
+    <string name="pace_is_a_real_estate_technology_application">Pace 不動産技術アプリケーションです</string>
+    <string name="this_is_an_application_that_is_suitable_for_smart">これはスマートに適したアプリケーションです</string>
+    <string name="living_through_search_real_state">検索の実状態で生きる</string>
+    <string name="easy_to_use">使いやすい</string>
+    <string name="easy_to_rent_get_support_after_renting">レンタルが簡単で、レンタル後にサポートを受ける</string>
+    <string name="and_find_similar_property">同様のプロパティを見つける</string>
+    <string name="secure_transparent_and_cost_effective">安全で透過的で費用対効果の高い</string>
+    <string name="secure_and_transparent_information">安全で透明な情報</string>
+    <string name="about_the_real_estate_that_you_want_at">あなたが望む不動産について</string>
+    <string name="cost_effective_rate">費用対効果の高い料金</string>
+    <string name="skipwelcome">スキップ</string>
+    <string name="next">次</string>
 </resources>

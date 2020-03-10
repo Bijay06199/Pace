@@ -36,7 +36,7 @@
             android:layout_marginTop="30dp"
             android:textSize="28sp"
             android:textColor="#194CB4"
-            android:text="Welcome To Pace" />
+            android:text="@string/welcome_to_pace" />
 
         <TextView
             android:id="@+id/txtSubtitle"
@@ -46,7 +46,7 @@
             android:layout_marginTop="20dp"
             android:textSize="16sp"
             android:textColor="#201A16"
-            android:text="Pace is a real estate technology application." />
+            android:text="@string/pace_is_a_real_estate_technology_application" />
 
 
 
@@ -57,7 +57,7 @@
             android:gravity="center"
             android:textSize="16sp"
             android:textColor="#201A16"
-            android:text="This is an application that is suitable for smart" />
+            android:text="@string/this_is_an_application_that_is_suitable_for_smart" />
 
 
         <TextView
@@ -67,7 +67,7 @@
             android:gravity="center"
             android:textSize="16sp"
             android:textColor="#201A16"
-            android:text="living through search real state" />
+            android:text="@string/living_through_search_real_state" />
 
 
 

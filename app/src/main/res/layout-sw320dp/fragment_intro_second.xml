@@ -39,7 +39,7 @@
                 android:layout_marginTop="30dp"
                 android:textSize="28sp"
                 android:textColor="#194CB4"
-                android:text="Easy to use" />
+                android:text="@string/easy_to_use" />
 
             <TextView
                 android:id="@+id/easySubtitle"
@@ -49,7 +49,7 @@
                 android:layout_marginTop="20dp"
                 android:textSize="16sp"
                 android:textColor="#201A16"
-                android:text="Easy to rent, get support after renting" />
+                android:text="@string/easy_to_rent_get_support_after_renting" />
 
             <TextView
                 android:id="@+id/easySubtitle1"
@@ -58,7 +58,7 @@
                 android:gravity="center"
                 android:textSize="16sp"
                 android:textColor="#201A16"
-                android:text=" and find similar property" />
+                android:text="@string/and_find_similar_property" />
 
 
 

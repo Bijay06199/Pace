@@ -7,14 +7,27 @@
     tools:context=".Activity.MainActivity">
 
 
-    <ImageView
+    <LinearLayout
+        android:orientation="horizontal"
         android:id="@+id/imgSkip"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@drawable/skip1"
         android:layout_alignParentEnd="true"
-
+         android:gravity="center"
         android:layout_margin="10dp"
-        app:srcCompat="@drawable/skip" />
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#574A4A"
+            android:gravity="center"
+            android:textSize="11sp"
+            android:text="@string/skipwelcome"/>
+
+    </LinearLayout>
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -86,7 +99,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="220dp"
-                android:text="Next"
+                android:text="@string/next"
                 android:textColor="#194CB4" />
 
             <ImageView
