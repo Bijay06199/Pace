@@ -32,21 +32,32 @@ class WelcomeActivity : AppCompatActivity() {
         val typeface= Typeface.createFromAsset(assets,"Quicksand_Regular.ttf")
 
         val layoutJapan = findViewById<LinearLayout>(R.id.layoutJapan)
-        val layoutIndonesia = findViewById<LinearLayout>(R.id.layoutIndonesia)
+        val layoutHebrew = findViewById<LinearLayout>(R.id.layoutHebrew)
         val layoutUk = findViewById<LinearLayout>(R.id.layoutUk)
         val layoutVietnam = findViewById<LinearLayout>(R.id.layoutVietnam)
+        val layoutRussia = findViewById<LinearLayout>(R.id.layoutRussian)
+        val layoutSpanish = findViewById<LinearLayout>(R.id.layoutSpanish)
+        val layoutNepal = findViewById<LinearLayout>(R.id.layoutNepal)
+
         val btnConfirm= findViewById<Button>(R.id.btnConfirm)
 
         val japanTick= findViewById<ImageView>(R.id.japanTick)
         val ukTick= findViewById<ImageView>(R.id.ukTick)
-        val indonesiaTick= findViewById<ImageView>(R.id.indonesiaTick)
+        val hebrewTick= findViewById<ImageView>(R.id.hebrewTick)
         val vietnamTick= findViewById<ImageView>(R.id.vietnamTick)
+        val russiaTick= findViewById<ImageView>(R.id.russiaTick)
+        val spanishTick= findViewById<ImageView>(R.id.spanishTick)
+        val nepalTick= findViewById<ImageView>(R.id.nepalTick)
 
 
         japanTick.visibility=View.INVISIBLE
         ukTick.visibility=View.INVISIBLE
-        indonesiaTick.visibility=View.INVISIBLE
+        hebrewTick.visibility=View.INVISIBLE
         vietnamTick.visibility=View.INVISIBLE
+        russiaTick.visibility=View.INVISIBLE
+        spanishTick.visibility=View.INVISIBLE
+        nepalTick.visibility=View.INVISIBLE
+
 
 
 
@@ -59,9 +70,13 @@ class WelcomeActivity : AppCompatActivity() {
 
             japanTick.visibility= View.INVISIBLE
             ukTick.visibility=View.VISIBLE
-            indonesiaTick.visibility=View.INVISIBLE
+            hebrewTick.visibility=View.INVISIBLE
             vietnamTick.visibility=View.INVISIBLE
+            russiaTick.visibility=View.INVISIBLE
+            spanishTick.visibility=View.INVISIBLE
+            nepalTick.visibility=View.INVISIBLE
             setlocate("en")
+            btnConfirm.text=getText(R.string.confirm)
 
 
         }
@@ -82,22 +97,31 @@ class WelcomeActivity : AppCompatActivity() {
 
             japanTick.visibility= View.VISIBLE
             ukTick.visibility=View.INVISIBLE
-            indonesiaTick.visibility=View.INVISIBLE
+            hebrewTick.visibility=View.INVISIBLE
             vietnamTick.visibility=View.INVISIBLE
+            russiaTick.visibility=View.INVISIBLE
+            spanishTick.visibility=View.INVISIBLE
+            nepalTick.visibility=View.INVISIBLE
             setlocate("ja")
+            btnConfirm.text=getText(R.string.confirm)
+
         })
 
 
-        layoutIndonesia.setOnClickListener(View.OnClickListener {
+        layoutHebrew.setOnClickListener(View.OnClickListener {
 
 
 
 
             japanTick.visibility= View.INVISIBLE
             ukTick.visibility=View.INVISIBLE
-            indonesiaTick.visibility=View.VISIBLE
+            hebrewTick.visibility=View.VISIBLE
             vietnamTick.visibility=View.INVISIBLE
+            russiaTick.visibility=View.INVISIBLE
+            spanishTick.visibility=View.INVISIBLE
+            nepalTick.visibility=View.INVISIBLE
             setlocate("in")
+            btnConfirm.text=getText(R.string.confirm)
         })
 
         layoutUk.setOnClickListener(View.OnClickListener {
@@ -105,9 +129,13 @@ class WelcomeActivity : AppCompatActivity() {
 
             japanTick.visibility= View.INVISIBLE
             ukTick.visibility=View.VISIBLE
-            indonesiaTick.visibility=View.INVISIBLE
+            hebrewTick.visibility=View.INVISIBLE
             vietnamTick.visibility=View.INVISIBLE
+            russiaTick.visibility=View.INVISIBLE
+            spanishTick.visibility=View.INVISIBLE
+            nepalTick.visibility=View.INVISIBLE
             setlocate("en")
+            btnConfirm.text=getText(R.string.confirm)
 
 
         })
@@ -120,18 +148,74 @@ class WelcomeActivity : AppCompatActivity() {
 
             japanTick.visibility= View.INVISIBLE
             ukTick.visibility=View.INVISIBLE
-            indonesiaTick.visibility=View.INVISIBLE
+            hebrewTick.visibility=View.INVISIBLE
             vietnamTick.visibility=View.VISIBLE
+            russiaTick.visibility=View.INVISIBLE
+            spanishTick.visibility=View.INVISIBLE
+            nepalTick.visibility=View.INVISIBLE
             setlocate("vi")
+            btnConfirm.text=getText(R.string.confirm)
         })
+
+        layoutSpanish.setOnClickListener(View.OnClickListener {
+
+
+
+
+            japanTick.visibility= View.INVISIBLE
+            ukTick.visibility=View.INVISIBLE
+            hebrewTick.visibility=View.INVISIBLE
+            vietnamTick.visibility=View.INVISIBLE
+            russiaTick.visibility=View.INVISIBLE
+            spanishTick.visibility=View.VISIBLE
+            nepalTick.visibility=View.INVISIBLE
+            setlocate("vi")
+            btnConfirm.text=getText(R.string.confirm)
+        })
+
+        layoutRussia.setOnClickListener(View.OnClickListener {
+
+
+
+
+            japanTick.visibility= View.INVISIBLE
+            ukTick.visibility=View.INVISIBLE
+            hebrewTick.visibility=View.INVISIBLE
+            vietnamTick.visibility=View.INVISIBLE
+            russiaTick.visibility=View.VISIBLE
+            spanishTick.visibility=View.INVISIBLE
+            nepalTick.visibility=View.INVISIBLE
+            setlocate("vi")
+            btnConfirm.text=getText(R.string.confirm)
+        })
+
+        layoutNepal.setOnClickListener(View.OnClickListener {
+
+
+
+
+            japanTick.visibility= View.INVISIBLE
+            ukTick.visibility=View.INVISIBLE
+            hebrewTick.visibility=View.INVISIBLE
+            vietnamTick.visibility=View.INVISIBLE
+            russiaTick.visibility=View.INVISIBLE
+            spanishTick.visibility=View.INVISIBLE
+            nepalTick.visibility=View.VISIBLE
+            setlocate("vi")
+            btnConfirm.text=getText(R.string.confirm)
+        })
+
 
 
         txtWelcome.text="Welcome !"
         txtSelect.text="Please select your language"
         txtJapan.text="Japanese"
         txtEnglish.text="English"
-        txtIndonesia.text="Bahasa Indonesia"
-        txtVietnam.text="Vietnamese"
+        txtHebrew.text="Hebrew"
+        txtVietnam.text="Tieng Viet"
+        txtSpanish.text="Spanish"
+        txtRussia.text="Russian"
+        txtNepal.text="Nepal"
 
 
 
@@ -139,8 +223,11 @@ class WelcomeActivity : AppCompatActivity() {
         txtSelect.typeface=typeface
         txtJapan.typeface=typeface
         txtEnglish.typeface=typeface
-        txtIndonesia.typeface=typeface
+        txtHebrew.typeface=typeface
         txtVietnam.typeface=typeface
+        txtRussia.typeface=typeface
+        txtSpanish.typeface=typeface
+        txtNepal.typeface=typeface
 
 
 

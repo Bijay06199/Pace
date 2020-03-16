@@ -38,4 +38,21 @@
     <string name="cost_effective_rate">cost effective rate</string>
     <string name="skipwelcome">Skip</string>
     <string name="next">Next</string>
+    <string name="confirm">Confirm</string>
+    <string name="pleaseenter">Please enter your email address so we can</string>
+    <string name="sendyou">send you a verification code</string>
+    <string name="enter_your_email_address">Enter your email address</string>
+    <string name="enter_4digit_code">Enter 4 digit code</string>
+    <string name="code_was_sent_your_mobile">The code was sent your mobile number</string>
+    <string name="enter_your_code">Please enter your code</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="reset_newpassword">New Password</string>
+    <string name="enternew_password">Enter new Password</string>
+    <string name="reenternew_password">Reenter new Password</string>
+    <string name="password_reset">Password reset</string>
+    <string name="successful">successful</string>
+    <string name="successfullysent">Your password has been successfully reset</string>
+    <string name="entercode">enter code</string>
+
+
 </resources>

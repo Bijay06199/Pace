@@ -36,7 +36,8 @@ class EmailActivity : AppCompatActivity() {
             val inflater: LayoutInflater =
                 getSystemService(Context.LAYOUT_INFLATER_SERVICE) as LayoutInflater
             val view = inflater.inflate(R.layout.popup_layout2, null)
-            overlap1.setBackgroundResource(R.drawable.blurimage)
+           // overlap1.setBackgroundResource(R.drawable.blurimage)
+            overlap1.setBackgroundColor(resources.getColor(R.color.blur))
 
 
 
@@ -44,7 +45,7 @@ class EmailActivity : AppCompatActivity() {
             val popupWindow = PopupWindow(
                 view, // Custom view to show in popup window
                 LinearLayout.LayoutParams.MATCH_PARENT, // Width of popup window
-                LinearLayout.LayoutParams.WRAP_CONTENT // Window height
+                LinearLayout.LayoutParams.MATCH_PARENT // Window height
 
             )
 
@@ -56,13 +57,11 @@ class EmailActivity : AppCompatActivity() {
                     popupWindow.dismiss()
                 }
             }, 1500)
-            popupWindow.elevation = 10.0F
-            popupWindow.width=1000
-            popupWindow.isFocusable=true
+          //  popupWindow.elevation = 10.0F
+        //    popupWindow.isFocusable=true
             popupWindow.animationStyle=R.style.popup_animation
             popupWindow.isTouchable=true
             popupWindow.dismiss()
-            popupWindow.height=220
             popupWindow.isOutsideTouchable=true
 
 

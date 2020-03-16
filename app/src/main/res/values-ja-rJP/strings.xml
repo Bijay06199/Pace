@@ -37,4 +37,21 @@
     <string name="cost_effective_rate">費用対効果の高い料金</string>
     <string name="skipwelcome">スキップ</string>
     <string name="next">次</string>
+    <string name="confirm">確認</string>
+    <string name="pleaseenter">メールアドレスを入力してください</string>
+    <string name="sendyou">確認コードを送ってください</string>
+    <string name="enter_your_email_address">メールアドレスを入力してください</string>
+    <string name="enter_4digit_code">4桁のコードを入力してください</string>
+    <string name="code_was_sent_your_mobile">コードは携帯電話番号に送信されました</string>
+    <string name="enter_your_code">コードを入力してください</string>
+    <string name="reset_password">パスワードを再設定する</string>
+    <string name="reset_newpassword">新しいパスワード</string>
+    <string name="enternew_password">新しいパスワードを入力してください</string>
+    <string name="reenternew_password">新しいパスワードを再入力してください</string>
+    <string name="password_reset">パスワードのリセット</string>
+    <string name="successful">成功した</string>
+    <string name="successfullysent">パスワードは正常にリセットされました</string>
+    <string name="entercode">コードを入力する</string>
+
+
 </resources>

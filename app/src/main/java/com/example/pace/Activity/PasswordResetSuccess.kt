@@ -18,6 +18,7 @@ class PasswordResetSuccess : AppCompatActivity() {
 
         val backbutton= findViewById<LinearLayout>(R.id.backbutton)
 
+
         val typeface= Typeface.createFromAsset(assets,"Quicksand_Regular.ttf")
 
 
@@ -27,9 +28,9 @@ class PasswordResetSuccess : AppCompatActivity() {
         val txtEnter= findViewById<TextView>(R.id.txtEnter)
 
 
-        txtReset.text="Password reset"
-        txtSuccess.text="successful"
-        txtCode.text="Your password has been successfully reset"
+        txtReset.text=getString(R.string.password_reset)
+        txtSuccess.text=getString(R.string.successful)
+        txtCode.text=getString(R.string.successfullysent)
 
 
         txtReset.typeface=typeface
@@ -54,6 +55,8 @@ class PasswordResetSuccess : AppCompatActivity() {
                 ResetPasswordActivity::class.java)
             startActivity(intent)
         })
+
+
 
 
 

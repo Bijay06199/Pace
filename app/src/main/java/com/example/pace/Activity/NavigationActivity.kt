@@ -135,7 +135,7 @@ class NavigationActivity : AppCompatActivity() {
             user.setTextColor(resources.getColor(R.color.colorAccent))
         })
 
-        val typeface= Typeface.createFromAsset(assets,"Quicksand_Light.otf")
+        val typeface= Typeface.createFromAsset(assets,"Quicksand_Regular.ttf")
 
         home.text="Home"
         saved.text="Saved"

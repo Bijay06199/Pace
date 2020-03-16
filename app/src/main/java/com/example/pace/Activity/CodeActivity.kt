@@ -23,9 +23,9 @@ class CodeActivity : AppCompatActivity() {
         val txtSent= findViewById<TextView>(R.id.txtSent)
         val txtEnterCode= findViewById<TextView>(R.id.txtEntercode)
 
-        txtFourDigit.text="Enter 4 digit code"
-        txtSent.text="The code was sent your mobile number"
-        txtEnterCode.text="Please enter your code"
+        txtFourDigit.text=getString(R.string.enter_4digit_code)
+        txtSent.text=getString(R.string.code_was_sent_your_mobile)
+
 
         val edtCode1=findViewById<EditText>(R.id.edtCode1)
         val edtCode2=findViewById<EditText>(R.id.edtCode2)

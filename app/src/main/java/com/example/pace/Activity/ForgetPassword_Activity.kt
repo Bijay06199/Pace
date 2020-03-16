@@ -40,10 +40,10 @@ class ForgetPassword_Activity : AppCompatActivity() {
         })
 
 
-        txtForget.text="Forgot Passsword"
-        txtEnter.text="Please enter your email address so we can"
-        txtVerification.text="send you a verification code"
-        btnNext.text="Next"
+        txtForget.text=getString(R.string.forgotpassword)
+        txtEnter.text=getString(R.string.pleaseenter)
+        txtVerification.text=getString(R.string.sendyou)
+        btnNext.text=getString(R.string.next)
 
 
 

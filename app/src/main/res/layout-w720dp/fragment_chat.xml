@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Messages"
+                    android:textColor="#454F63"
+                    android:textSize="18sp" />
+
+                <SearchView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:elevation="2dp"
+                    android:fadingEdge="horizontal"
+                    android:background="@color/cardview_light_background"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layoutDirection="rtl" />
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/chat1"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imageView523"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/person2" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/burns11"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Marie Winter"
+                                android:textColor="#454F63"
+                                android:textSize="26sp" />
+
+                            <TextView
+                                android:id="@+id/burns12"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Happiness is not something readymade."
+                                android:textColor="#78849E"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/burns21"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="It comes from your own actions."
+                                android:textColor="#78849E"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#000"/>
+
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imageView522"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/person4" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/burns23"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Grant Marshall"
+                                android:textColor="#454F63"
+                                android:textSize="26sp" />
+
+                            <TextView
+                                android:id="@+id/burns13"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Happiness is not something readymade."
+                                android:textColor="#78849E"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/burns22"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="It comes from your own actions."
+                                android:textColor="#78849E"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/image"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/person5" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/julia"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Duran Clayton"
+                                android:textColor="#454F63"
+                                android:textSize="26sp" />
+
+                            <TextView
+                                android:id="@+id/julia1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Happiness is not something readymade."
+                                android:textColor="#78849E"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/julia2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="It comes from your own actions."
+                                android:textColor="#78849E"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#000"/>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/person6" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/ouran1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Julia Petersen"
+                                android:textColor="#454F63"
+                                android:textSize="26sp" />
+
+                            <TextView
+                                android:id="@+id/ouran2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Happiness is not something readymade."
+                                android:textColor="#78849E"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/ouran3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="It comes from your own actions."
+                                android:textColor="#78849E"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imageView52"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/person2" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/burns"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Burns Marks"
+                                android:textColor="#454F63"
+                                android:textSize="26sp" />
+
+                            <TextView
+                                android:id="@+id/burns1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Happiness is not something readymade."
+                                android:textColor="#78849E"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/burns2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="It comes from your own actions."
+                                android:textColor="#78849E"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/person4" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/winter"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Marie Winter"
+                                android:textColor="#454F63"
+                                android:textSize="26sp" />
+
+                            <TextView
+                                android:id="@+id/winter1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Happiness is not something readymade."
+                                android:textColor="#78849E"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/winter2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="It comes from your own actions."
+                                android:textColor="#78849E"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="#000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="80dp"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/imageView51"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/person5" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:gravity="center"
+
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/duran"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Marie Winter"
+                                android:textColor="#454F63"
+                                android:textSize="26sp" />
+
+                            <TextView
+                                android:id="@+id/duran1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="Happiness is not something readymade."
+                                android:textColor="#78849E"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:id="@+id/duran3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="It comes from your own actions."
+                                android:textColor="#78849E"
+
+                                android:textSize="20sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+</RelativeLayout>

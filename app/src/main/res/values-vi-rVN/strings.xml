@@ -38,4 +38,20 @@
 </string>
     <string name="skipwelcome">Nhảy</string>
     <string name="next">Kế tiếp</string>
+    <string name="confirm">xác nhận</string>
+    <string name="pleaseenter">Vui lòng nhập địa chỉ email của bạn để chúng tôi có thể</string>
+    <string name="sendyou">gửi cho bạn một mã xác minh</string>
+    <string name="enter_your_email_address">nhập địa chỉ email của bạn</string>
+    <string name="enter_4digit_code">Nhập mã gồm 4 chữ số</string>
+    <string name="code_was_sent_your_mobile">Mã đã được gửi số điện thoại di động của bạn</string>
+    <string name="enter_your_code">Vui lòng nhập mã của bạn</string>
+    <string name="reset_password">Đặt lại mật khẩu</string>
+    <string name="reset_newpassword">mật khẩu mới</string>
+    <string name="enternew_password">Nhập mật khẩu mới</string>
+    <string name="reenternew_password">Nhập lại mật khẩu mới</string>
+    <string name="password_reset">Đặt lại mật khẩu</string>
+    <string name="successful">thành công</string>
+    <string name="successfullysent">Mật khẩu của bạn đã được đặt lại thành công</string>
+    <string name="entercode">nhập mã</string>
+
 </resources>

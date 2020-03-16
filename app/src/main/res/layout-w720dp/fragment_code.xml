@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left"
+        android:layout_margin="10dp"
+        android:id="@id/backarrow">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="left"
+        android:src="@drawable/backarrow"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/entercode" />
+
+            <TextView
+                android:id="@+id/txtFourDigit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="42sp"
+                android:textColor="#454555"
+                android:layout_marginTop="30dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/txtSent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#454555"
+                android:textSize="25sp"
+                android:layout_marginTop="5dp"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/txtEntercode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#454555"
+                android:textSize="25sp"
+                android:layout_marginTop="2dp"
+                android:text="" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtCode1"
+                    android:layout_width="57dp"
+                    android:layout_height="57dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:maxLength="1"
+                    android:nextFocusForward="@id/edtCode2"
+                    android:background="@drawable/forgot_password_layout"
+                    android:inputType="number"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/edtCode2"
+                    android:layout_width="57dp"
+                    android:layout_height="57dp"
+                    android:background="@drawable/forgot_password_layout"
+                    android:ems="10"
+                    android:layout_marginLeft="30dp"
+                    android:gravity="center"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:hint="" />
+
+                <EditText
+                    android:id="@+id/edtCode3"
+                    android:layout_width="57dp"
+                    android:layout_height="57dp"
+                    android:ems="10"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/forgot_password_layout"
+                    android:gravity="center"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:hint="" />
+
+                <EditText
+                    android:id="@+id/edtCode4"
+                    android:layout_width="57dp"
+                    android:layout_height="57dp"
+                    android:ems="10"
+                    android:layout_marginLeft="30dp"
+                    android:background="@drawable/forgot_password_layout"
+                    android:gravity="center"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:hint="" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/forgot_layout"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#FFF"
+            android:textSize="26sp"
+            android:textAllCaps="false"
+            android:text="@string/next" />
+
+    </LinearLayout>
+</RelativeLayout>

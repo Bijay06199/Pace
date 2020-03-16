@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".Activity.Mortgage_Calculator">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/backarrowmortgage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/backarrow" />
+
+            <TextView
+                android:id="@+id/textView72"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#454F63"
+                android:textSize="18sp"
+                android:layout_marginLeft="5dp"
+                android:text="Mortgage calculator" />
+        </LinearLayout>
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/coordinator"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:layout_marginTop="20dp"
+            android:layout_gravity="bottom">
+
+            <com.google.android.material.bottomappbar.BottomAppBar
+                android:id="@+id/bar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/payment"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="11sp"
+                            android:orientation="vertical"
+                            android:textAllCaps="false"
+                            android:text="Payment"
+                            android:textColor="#99000000">
+
+                        </TextView>
+
+                        <TextView
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:id="@+id/affordability"
+                            android:layout_height="wrap_content"
+                            android:textSize="11sp"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:textAllCaps="false"
+                            android:text="Affordability"
+                            android:textColor="#9A000000">
+
+                        </TextView>
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+                        <LinearLayout
+                            android:id="@+id/Underline"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/paymentLayoutUnderline"
+                                android:layout_width="55dp"
+                                android:layout_height="2dp"
+                                android:orientation="horizontal"></LinearLayout>
+
+
+
+                            <LinearLayout
+                                android:id="@+id/affordabilityLayoutUnderline"
+                                android:layout_width="70dp"
+                                android:layout_height="2dp"
+                                android:layout_marginLeft="25dp"
+                                android:orientation="horizontal"></LinearLayout>
+
+
+                        </LinearLayout>
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+            </com.google.android.material.bottomappbar.BottomAppBar>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+        <FrameLayout
+            android:id="@+id/fragment_container11"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/coordinator"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>

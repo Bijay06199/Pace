@@ -4,12 +4,17 @@ import android.content.Intent
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.InputType
 import android.view.View
 import android.widget.CheckBox
+import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import com.example.pace.R
 import com.google.android.material.textfield.TextInputLayout
+import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_register_.*
+import kotlinx.android.synthetic.main.activity_register_.edtConfirm11
 
 
 class Register_Activity : AppCompatActivity() {
@@ -17,6 +22,8 @@ class Register_Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register_)
+
+        var show=true
 
 
         val txtLogin= findViewById<TextView>(R.id.txtLogin)
@@ -30,8 +37,60 @@ class Register_Activity : AppCompatActivity() {
         val txtFemale= findViewById<TextView>(R.id.txtFemale)
         val txtOther= findViewById<TextView>(R.id.txtOther)
 
+        val imageeye=findViewById<LinearLayout>(R.id.imageeye)
+        val imageeye1=findViewById<LinearLayout>(R.id.imageeye1)
 
-checkMale.setOnClickListener(View.OnClickListener {
+        val hide=findViewById<ImageView>(R.id.imgEyeoff)
+        val hide1=findViewById<ImageView>(R.id.imgEyeoff1)
+
+
+
+
+               imageeye1.setOnClickListener(View.OnClickListener {
+
+            if(show) {
+                hide1.setImageResource(R.drawable.eye)
+
+                edtConfirm11.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD or InputType.TYPE_CLASS_TEXT)
+                edtConfirm11.setSelection(edtConfirm11.text!!.length)
+
+                show=false
+            }else{
+
+                hide1.setImageResource(R.drawable.hide)
+
+                edtConfirm11.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD or InputType.TYPE_CLASS_TEXT)
+                edtConfirm11.setSelection(edtConfirm11.text!!.length)
+                show=true
+            }
+
+        })
+
+
+        imageeye.setOnClickListener(View.OnClickListener {
+
+            if(show) {
+                hide.setImageResource(R.drawable.eye)
+
+                edtConfirm12.setInputType(InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD or InputType.TYPE_CLASS_TEXT)
+                edtConfirm12.setSelection(edtConfirm12.text!!.length)
+
+                show=false
+            }else{
+
+                hide.setImageResource(R.drawable.hide)
+
+                edtConfirm12.setInputType(InputType.TYPE_TEXT_VARIATION_PASSWORD or InputType.TYPE_CLASS_TEXT)
+                edtConfirm12.setSelection(edtConfirm12.text!!.length)
+                show=true
+            }
+
+        })
+
+
+
+
+        checkMale.setOnClickListener(View.OnClickListener {
 
     if(checkMale.isChecked){
 
@@ -97,11 +156,11 @@ checkMale.setOnClickListener(View.OnClickListener {
 
         val typeface= Typeface.createFromAsset(assets,"Quicksand_Regular.ttf")
 
-        val edtConfirm=findViewById<TextInputLayout>(R.id.edtConfirm)
-        edtConfirm.setTypeface(typeface)
+        val edtPassword=findViewById<TextInputLayout>(R.id.edtPassword)
+        edtPassword.setTypeface(typeface)
 
-        val edtConfirm1=findViewById<TextInputLayout>(R.id.edtConfirm1)
-        edtConfirm1.setTypeface(typeface)
+        val edtPassword1=findViewById<TextInputLayout>(R.id.edtPassword1)
+        edtPassword1.setTypeface(typeface)
 
         val edtFull=findViewById<TextInputLayout>(R.id.edtFull)
         edtFull.setTypeface(typeface)

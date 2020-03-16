@@ -37,4 +37,20 @@
     <string name="cost_effective_rate">tingkat biaya efektif</string>
     <string name="skipwelcome">Melewatkan</string>
     <string name="next">Lanjut</string>
+    <string name="confirm">Konfirmasi</string>
+    <string name="pleaseenter">Silakan masukkan alamat email Anda sehingga kami dapat</string>
+    <string name="sendyou">mengirimkan kode verifikasi kepada Anda</string>
+    <string name="enter_your_email_address">Masukkan alamat email Anda</string>
+    <string name="enter_4digit_code">Masukkan 4 digit kode</string>
+    <string name="code_was_sent_your_mobile">Kode itu dikirimkan nomor ponsel Anda</string>
+    <string name="enter_your_code">Silakan masukkan kode Anda</string>
+    <string name="reset_password">Setel Ulang Kata Sandi</string>
+    <string name="reset_newpassword">kata sandi baru</string>
+    <string name="enternew_password">Masukan kata sandi baru</string>
+    <string name="reenternew_password">Masukkan kembali kata sandi baru</string>
+    <string name="password_reset">Reset kata sandi</string>
+    <string name="successful">berhasil</string>
+    <string name="successfullysent">Kata sandi Anda telah berhasil direset</string>
+    <string name="entercode">memasukkan kode</string>
+
 </resources>

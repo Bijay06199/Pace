@@ -2,6 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.pace">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <supports-screens android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,9 +17,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Activity.Mortgage_Calculator"></activity>
+        <activity android:name=".Activity.EmailVerificatinActivity"></activity>
+        <activity android:name=".Activity.Mobile_VerificationActivity" />
+        <activity android:name=".Activity.IDVerificationActivity" />
+        <activity android:name=".Activity.VerifyNowActivity" />
+        <activity android:name=".Activity.EditProfileActivity" />
+        <activity android:name=".Activity.MyProfileActivity" />
+        <activity android:name=".Activity.Mortgage_Calculator" />
         <activity android:name=".Activity.EmailActivity" />
-        <activity android:name=".Activity.Email_Activity" />
         <activity android:name=".Activity.RequestVisit" />
         <activity android:name=".Activity.SettingsActivity" />
         <activity android:name=".Activity.ShareActivity" />
